@@ -227,8 +227,8 @@ body {
 h1 {
   width: calc(100% / 9 * 4);
   margin-left: calc(100% / 9);
-  margin-top: calc(-100vw / 11);
-  font-size: 9.5vw;
+  margin-top: calc(-100vw / 11 + 10px);
+  font-size: 9.4vw;
   font-weight: 800;
   line-height: 9.5vw; }
 
@@ -236,22 +236,24 @@ h1 {
   width: calc(100% / 9 * 3);
   height: calc(100vw / 11 * 2) !important;
   vertical-align: top;
-  margin-top: calc(100vw / 11); }
+  margin-top: calc(100vw / 11 - 10px); }
 
 h3 {
   width: calc(100% / 9 * 5);
-  margin-top: calc(100vw / 11);
+  margin-top: calc(100vw / 11 - 15px) !important;
+  margin-bottom: calc(100vw / 11) !important;
   margin-left: calc((100% / 9) - 8px);
   text-transform: uppercase;
-  font-weight: 800; }
+  font-weight: 800;
+  vertical-align: baseline; }
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     h3 {
       font-size: 2vw;
-      line-height: 3.1vw; } }
+      line-height: 3.2vw; } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     h3 {
-      font-size: 3vw;
-      line-height: 4.5vw; } }
+      font-size: 3.1vw;
+      line-height: 4.7vw; } }
 
 p {
   margin-bottom: 40px; }
