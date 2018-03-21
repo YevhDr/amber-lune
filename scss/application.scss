@@ -1,0 +1,72 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+@import "components/weirdo";
+
+* {
+  box-sizing: border-box;
+}
+
+$rect: calc(100vw / 12);
+
+body {
+  font-family: "Anonymous Pro", sans-serif!important;
+  color:white;
+  background: #343434;
+}
+
+.padding {
+  margin:calc(100vw / 12 * 1 - 6px);
+  background-size: $rect $rect;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px),
+  linear-gradient(to bottom, grey 1px, #343434 1px);
+}
+
+//.top {
+//  height: calc(100vw / 12 * 2);
+//}
+
+.img1 {
+  width:calc(100vw / 12 * 2);
+  margin-left: calc(100vw / 12 * 8);
+}
+
+h1 {
+  width: calc(100vw / 12 * 5);
+  margin-left: calc(100vw / 12 * 1);
+  margin-top: 0!important;
+  font-size:85pt;
+  font-weight: 800;
+  line-height: 85pt;
+  //margin-bottom: calc(100vw / 12);
+  //text-transform: uppercase;
+}
+
+h3 {
+  //position: absolute;
+  margin-top: calc(100vw / 12 * 1);
+  margin-left: calc(100vw / 12 * 4);
+  margin-right: calc(100vw / 12 * 1);
+  text-transform: uppercase;
+  vertical-align: text-top;
+  line-height: 30pt;
+  font-size:20pt;
+  font-weight: 800;
+}
+
+p {
+  font-size: 14pt;
+  margin-bottom: 40px;
+}
+
+.paragraph {
+  margin-top: calc(100vw / 12);
+  width: calc(100vw / 12 * 5);
+  margin-left: calc(100vw / 12 * 2);
+
+}
+
+
+
