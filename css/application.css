@@ -316,8 +316,8 @@ p {
     margin-top: calc(calc(1280px / 9) * 2 - 8px);
     margin-left: calc(calc(1280px / 9) - 8px);
     width: calc(calc(1280px / 9) * 3);
-    font-size: 1.1vw;
-    line-height: 2.0vw; } }
+    font-size: 1.5vw;
+    line-height: 2.5vw; } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   .paragraph {
     margin-top: calc(calc(100vw / 9) * 2);
