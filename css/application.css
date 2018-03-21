@@ -197,48 +197,76 @@ html {
       fill: none;
       stroke: none; }
 
-* {
-  box-sizing: border-box; }
-
 body {
   font-family: "Anonymous Pro", sans-serif !important;
   color: white;
-  background: #343434; }
+  background: #414141; }
 
 .padding {
-  margin: calc(100vw / 12 * 1 - 6px);
-  background-size: calc(100vw / 12) calc(100vw / 12);
-  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, #343434 1px); }
+  margin: 10%;
+  background-size: calc(100% / 9) calc(100vw / 11);
+  background-image: linear-gradient(to right, #585858 1px, transparent 1px), linear-gradient(to bottom, #585858 1px, #414141 1px); }
+
+.roww {
+  display: inline-block; }
+
+.block {
+  display: inline-block; }
 
 .img1 {
-  width: calc(100vw / 12 * 2);
-  margin-left: calc(100vw / 12 * 8); }
+  width: calc(100% / 9 * 2);
+  height: calc(100vw / 11 * 2);
+  margin-left: calc(100% / 9  * 7); }
+
+.height-2 {
+  height: calc(100vw / 11 * 2) !important; }
+
+.empty_cell {
+  height: calc(100vw / 11); }
 
 h1 {
-  width: calc(100vw / 12 * 5);
-  margin-left: calc(100vw / 12 * 1);
-  margin-top: 0 !important;
-  font-size: 85pt;
+  width: calc(100% / 9 * 4);
+  margin-left: calc(100% / 9);
+  margin-top: calc(-100vw / 11);
+  font-size: 9.5vw;
   font-weight: 800;
-  line-height: 85pt; }
+  line-height: 9.5vw; }
+
+.img2 {
+  width: calc(100% / 9 * 3);
+  height: calc(100vw / 11 * 2) !important;
+  vertical-align: top;
+  margin-top: calc(100vw / 11); }
 
 h3 {
-  margin-top: calc(100vw / 12 * 1);
-  margin-left: calc(100vw / 12 * 4);
-  margin-right: calc(100vw / 12 * 1);
+  width: calc(100% / 9 * 5);
+  margin-top: calc(100vw / 11);
+  margin-left: calc((100% / 9) - 10px);
   text-transform: uppercase;
-  vertical-align: text-top;
-  line-height: 30pt;
-  font-size: 20pt;
   font-weight: 800; }
+  @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
+    h3 {
+      font-size: 2vw;
+      line-height: 3.1vw; } }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    h3 {
+      font-size: 3vw;
+      line-height: 4.5vw; } }
 
 p {
-  font-size: 14pt;
   margin-bottom: 40px; }
+  @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
+    p {
+      font-size: 1.4vw;
+      line-height: 2.5vw; } }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    p {
+      font-size: 3vw;
+      line-height: 4vw; } }
 
 .paragraph {
-  margin-top: calc(100vw / 12);
-  width: calc(100vw / 12 * 5);
-  margin-left: calc(100vw / 12 * 2); }
+  margin-top: calc(100% / 9);
+  width: calc(100% / 9 * 3);
+  margin-left: calc(100% / 9 * 2); }
 
 /*# sourceMappingURL=application.css.map */
