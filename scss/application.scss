@@ -7,6 +7,10 @@
 
 $rect: 1280px;
 $cell: calc(#{$rect} / 9);
+$narrow-cell: calc(100vw / 9);
+
+
+
 
 body {
   font-family: "Anonymous Pro", sans-serif!important;
@@ -31,7 +35,7 @@ body {
   #{$brk-spnarrow},
   #{$brk-iphone} {
     width:100%;
-    background-size: calc(100% / 9) calc(100vw / 10);
+    background-size: $narrow-cell $narrow-cell;
     background-image: linear-gradient(to right, #585858 1px, transparent 1px),
     linear-gradient(to bottom, #585858 1px, #414141 1px);
   }
@@ -57,14 +61,13 @@ body {
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    width:calc(100% / 9 * 2);
-    height: calc(100vw / 11 * 2);
-    margin-left: calc(100% / 9  * 7);
+    width:calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 2);
+    margin-left: calc(#{$narrow-cell}  * 7);
   }
 }
 
 .height-2 {
-
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
@@ -74,12 +77,12 @@ body {
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    height: calc(100vw / 11 * 2)!important;
+    height: calc(#{$narrow-cell} * 2);
   }
 }
 
 .empty_cell {
-  height: calc(100vw / 11);
+  height: calc(100vw / 10);
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
@@ -93,30 +96,37 @@ body {
   }
 }
 
-h1:first-line { line-height: 160px; }
+@media #{$brk-xlarge},
+#{$brk-large},
+#{$brk-medium} {
+
+
+}
 
 h1 {
-
-  //display:inline;
-
+  font-weight: 800;
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
     font-size:151px;
-    font-weight: 800;
     line-height: 150px;
     margin-left:$cell;
-    margin-top:calc(-#{$rect} / 9);
+    margin-top:calc(-1280px / 9);
+    vertical-align: top;
+    h1:first-line {
+      line-height: 160px;
+    }
   }
 
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size:9.4vw;
-    font-weight: 800;
-    line-height: 9.5vw;
-    margin-left: calc(100% / 9);
-    margin-top: calc(-100vw / 11 + 10px);
+    width:calc(#{$narrow-cell} * 4);
+    font-size:11vw;
+    line-height:11vw;
+    margin-left: #{$narrow-cell};
+    margin-top: calc(-100vw / 9);
+    vertical-align: top;
   }
 }
 
@@ -130,16 +140,14 @@ h1 {
     width:calc(#{$cell} * 3);
     height: calc(#{$cell} * 2);
     margin-top: $cell;
-
-
   }
 
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    width:calc(100% / 9 * 3);
-    height: calc(100vw / 11 * 2)!important;
-    margin-top: calc(100vw / 11 - 10px);
+    width:calc(#{$narrow-cell} * 3);
+    height: calc(#{$narrow-cell} * 2);
+    margin-top: $narrow-cell;
   }
 }
 
@@ -156,8 +164,8 @@ h3 {
     font-size: 35px;
     line-height: 50px;
     width: calc(#{$cell} * 5);
-    margin-top: calc(#{$cell} - 5px)!important;
-    margin-bottom: #{$cell}!important;
+    margin-top: calc(#{$cell} - 5px);
+    margin-bottom: #{$cell};
     margin-left: calc(#{$cell} - 8px);
   }
 
@@ -166,10 +174,10 @@ h3 {
   #{$brk-iphone} {
     font-size: 3.1vw;
     line-height: 4.7vw;
-    width: calc(100% / 9 * 5);
-    margin-top: calc(100vw / 11 - 15px)!important;
-    margin-bottom: calc(100vw / 11)!important;
-    margin-left: calc((100% / 9) - 8px);
+    width: calc(#{$narrow-cell} * 4.8 - 8px);
+    margin-top: $narrow-cell;
+    margin-bottom: $narrow-cell;
+    margin-left: calc(#{$narrow-cell});
   }
 }
 
@@ -183,16 +191,16 @@ h3 {
   #{$brk-large},
   #{$brk-medium} {
     width:$cell;
-    height: calc(#{$cell} * 3)!important;
+    height: calc(#{$cell} * 3);
     margin-top: calc(#{$cell} * 2);
   }
 
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    width:calc(100% / 9);
-    height: calc(100vw / 11 * 3)!important;
-    margin-top: calc(100vw / 11 * 2);
+    width:$narrow-cell;
+    height: calc(#{$narrow-cell} * 3);
+    margin-top: calc(#{$narrow-cell} * 2);
   }
 }
 
