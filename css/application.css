@@ -230,7 +230,7 @@ body {
     margin: 0 auto;
     width: 1280px;
     background-size: calc(1280px / 9) calc(1280px / 9);
-    background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
+    background-image: linear-gradient(to right, #7b7a7a 0.25px, transparent 1px), linear-gradient(to bottom, #7b7a7a 0.25px, #706f6f 1px); } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   .main-content {
     width: 100%;
@@ -558,7 +558,7 @@ h3 {
       width: calc(calc(1280px / 9) * 2);
       height: calc(calc(1280px / 9) * 2);
       margin-top: calc(calc(1280px / 9) * 2);
-      margin-left: calc(1280px / 9); } }
+      margin-left: calc(calc(1280px / 9) - 8px); } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     .img11 {
       width: calc(calc(100vw / 9) * 2);
