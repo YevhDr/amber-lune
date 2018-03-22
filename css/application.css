@@ -230,7 +230,7 @@ body {
     margin: 0 auto;
     width: 1280px;
     background-size: calc(1280px / 9) calc(1280px / 9);
-    background-image: linear-gradient(to right, #7f7f7f 0.25px, transparent 1px), linear-gradient(to bottom, #7f7f7f 1px, #464646 0.25px); } }
+    background-image: linear-gradient(to right, #585858 0.25px, transparent 1px), linear-gradient(to bottom, #585858 1px, #464646 0.25px); } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   .main-content {
     width: 100%;

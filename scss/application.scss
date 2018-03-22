@@ -49,8 +49,8 @@ body {
     margin: 0 auto;
     width:$rect;
     background-size: $cell $cell;
-    background-image: linear-gradient(to right, #7f7f7f 0.25px, transparent 1px),
-    linear-gradient(to bottom, #7f7f7f 1px, #464646 0.25px);
+    background-image: linear-gradient(to right, #585858 0.25px, transparent 1px),
+    linear-gradient(to bottom, #585858 1px, #464646 0.25px);
   }
 
   @media #{$brk-narrow},
