@@ -509,11 +509,12 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    width:calc(#{$cell} * 2 - 5px);
+    position:absolute;
+    left: calc(#{$cell} * 5);
+    width:calc(#{$cell} * 3);
     height: calc(#{$cell} * 2);
     margin-top: calc(#{$cell} * 5);
-    margin-left: 0;
-    margin-right: 0;
+
   }
 
   @media #{$brk-narrow},
@@ -531,6 +532,7 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
+    margin-left: calc(#{$cell} * 2);
     width:calc(#{$cell} * 2 - 8px);
     height: calc(#{$cell} * 3);
     margin-top: 0;
