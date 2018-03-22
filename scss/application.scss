@@ -151,6 +151,11 @@ h3 {
     margin-bottom: $narrow-cell;
     margin-left: calc(#{$narrow-cell});
   }
+
+  @media #{$brk-mobile} {
+    font-size: 2.5vw;
+    line-height: 3.7vw;
+  }
 }
 
 
@@ -202,7 +207,7 @@ h3 {
   }
 
   @media #{$brk-narrow} {
-    margin-top: calc(#{$narrow-cell} * 3 - 8px);
+    margin-top: calc(#{$narrow-cell} * 3);
     width: calc(#{$narrow-cell} * 3 - 20px);
     margin-left: calc(#{$narrow-cell} - 8px);
     height: calc(#{$narrow-cell} *10);
@@ -210,9 +215,9 @@ h3 {
 
   @media #{$brk-mobile} {
     margin-top: calc(#{$narrow-cell} * 3);
-    width: calc(#{$narrow-cell} * 3 - 20px);
-    margin-left: calc(#{$narrow-cell} - 8px);
-    height: calc(#{$narrow-cell} *12);
+    width: calc(#{$narrow-cell} * 3);
+    margin-left: $narrow-cell;
+    height: calc(#{$narrow-cell} *13);
   }
 }
 
@@ -255,6 +260,8 @@ h3 {
     margin-top: calc(#{$narrow-cell} * 2);
     margin-left: calc(#{$narrow-cell} * 2);
   }
+
+
 }
 
 .img5 {
@@ -329,7 +336,7 @@ h3 {
   }
 
   @media #{$brk-narrow} {
-    margin-top: -8px;
+    margin-top:0;
     width: calc(#{$narrow-cell} * 3);
     margin-left: calc(#{$narrow-cell} * 2);
     height: calc(#{$narrow-cell} * 8);
@@ -411,10 +418,18 @@ h3 {
 
   @media #{$brk-narrow} {
     margin-left: - 8px;
-    margin-top: calc(#{$narrow-cell});
+    margin-top: $narrow-cell;
     width: calc(#{$narrow-cell} * 3 - 15px);
     height: calc(#{$narrow-cell} * 14);
   }
+
+  @media #{$brk-mobile} {
+    margin-left: 0;
+    margin-top: $narrow-cell;
+    width: calc(#{$narrow-cell} * 3);
+    height: calc(#{$narrow-cell} * 14);
+  }
+
 }
 
 .img9 {
@@ -427,14 +442,15 @@ h3 {
     height: calc(#{$cell} * 2);
   }
 
-  @media #{$brk-narrow}   {
+  @media #{$brk-narrow} {
     position:absolute;
     left: calc(#{$narrow-cell} * 5);
     top: calc(#{$narrow-cell} * 40);
     width:calc(#{$narrow-cell} * 3);
     height: calc(#{$narrow-cell} * 2);
-
   }
+
+
 }
 
 .img10 {
@@ -449,6 +465,13 @@ h3 {
 
   @media #{$brk-narrow} {
     margin-left: calc(#{$narrow-cell} * 2 - 8px);
+    width:calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 3);
+    margin-top: 0;
+  }
+
+  @media #{$brk-mobile} {
+    margin-left: calc(#{$narrow-cell} * 2);
     width:calc(#{$narrow-cell} * 2);
     height: calc(#{$narrow-cell} * 3);
     margin-top: 0;
