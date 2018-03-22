@@ -356,8 +356,8 @@ h3 {
 @media (max-width: 699px) {
   .paragraph1 {
     margin-top: calc(calc(100vw / 9 - 1px) * 3);
-    width: calc(calc(100vw / 9 - 1px) * 3);
-    margin-left: calc(100vw / 9 - 1px);
+    width: calc(calc(100vw / 9 - 1px) * 3 - 20px);
+    margin-left: calc(calc(100vw / 9 - 1px) - 8px);
     height: calc(calc(100vw / 9 - 1px) *13); } }
 
 @media (min-width: 1280px) {
@@ -394,7 +394,7 @@ h3 {
       width: calc(calc(100vw / 9 - 1px) * 2);
       height: calc(calc(100vw / 9 - 1px) * 3);
       margin-top: calc(calc(100vw / 9 - 1px) * 2);
-      margin-left: calc(calc(100vw / 9 - 1px) * 2); } }
+      margin-left: calc(calc(100vw / 9 - 1px) * 2 + 2px); } }
 
 .img5 {
   vertical-align: top; }
@@ -529,9 +529,9 @@ h3 {
     height: calc(calc(100vw / 9 - 1px) * 14); } }
 @media (max-width: 699px) {
   .paragraph3 {
-    margin-left: 0;
+    margin-left: -8px;
     margin-top: calc(100vw / 9 - 1px);
-    width: calc(calc(100vw / 9 - 1px) * 3);
+    width: calc(calc(100vw / 9 - 1px) * 3 - 15px);
     height: calc(calc(100vw / 9 - 1px) * 14); } }
 
 .img9 {
