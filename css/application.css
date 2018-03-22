@@ -220,6 +220,14 @@ body {
     background-size: calc(100vw / 9 - 1px) calc(100vw / 9 - 1px);
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
 
+@media (min-width: 1280px) {
+  .names {
+    margin: 0 auto;
+    width: 1280px; } }
+@media (max-width: 1279px) {
+  .names {
+    width: 100%; } }
+
 .roww {
   display: inline-block; }
 
@@ -341,6 +349,12 @@ h3 {
     width: calc(calc(100vw / 9 - 1px) * 3 - 20px);
     margin-left: calc(calc(100vw / 9 - 1px) - 8px);
     height: calc(calc(100vw / 9 - 1px) *10); } }
+@media (max-width: 699px) {
+  .paragraph1 {
+    margin-top: calc(calc(100vw / 9 - 1px) * 3);
+    width: calc(calc(100vw / 9 - 1px) * 3 - 20px);
+    margin-left: calc(calc(100vw / 9 - 1px) - 8px);
+    height: calc(calc(100vw / 9 - 1px) *12); } }
 
 @media (min-width: 1280px) {
   .incut {
@@ -438,6 +452,12 @@ h3 {
 @media (max-width: 1279px) {
   .paragraph2 {
     margin-top: -8px;
+    width: calc(calc(100vw / 9 - 1px) * 3);
+    margin-left: calc(calc(100vw / 9 - 1px) * 2);
+    height: calc(calc(100vw / 9 - 1px) * 8); } }
+@media (max-width: 699px) {
+  .paragraph2 {
+    margin-top: 0;
     width: calc(calc(100vw / 9 - 1px) * 3);
     margin-left: calc(calc(100vw / 9 - 1px) * 2);
     height: calc(calc(100vw / 9 - 1px) * 8); } }
@@ -613,18 +633,16 @@ h3 {
   text-align: right; }
   @media (min-width: 1280px) {
     .about {
+      margin-left: calc(calc(1280px / 9 - 1px) * 2.5);
       width: calc(calc(1280px / 9 - 1px) * 2);
       font-size: 16px;
       line-height: 22px; } }
-  @media (min-width: 1280px) {
-    .about {
-      margin-left: calc(1280px / 9 - 1px); } }
   @media (max-width: 1279px) {
     .about {
       margin-left: calc(calc(100vw / 9 - 1px) * 2);
       width: calc(calc(100vw / 9 - 1px) * 3);
-      font-size: 21px;
-      line-height: 32px; } }
+      font-size: 2vw;
+      line-height: 3vw; } }
 
 .about_names {
   font-weight: 800;
@@ -637,9 +655,9 @@ h3 {
       line-height: 22px; } }
   @media (max-width: 1279px) {
     .about_names {
-      margin-left: calc(calc(100vw / 9 - 1px) * 2);
-      width: calc(calc(100vw / 9 - 1px) * 3);
-      font-size: 21px;
-      line-height: 32px; } }
+      margin-left: 10px;
+      width: calc(calc(100vw / 9 - 1px) * 2);
+      font-size: 2vw;
+      line-height: 3vw; } }
 
 /*# sourceMappingURL=application.css.map */

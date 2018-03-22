@@ -42,6 +42,16 @@ body {
   }
 }
 
+.names {
+  @media #{$brk-medium} {
+    margin: 0 auto;
+    width: 1280px;
+  }
+  @media #{$brk-narrow}{
+    width: 100%;
+  }
+}
+
 .roww {
   display:inline-block;
 }
@@ -197,6 +207,13 @@ h3 {
     margin-left: calc(#{$narrow-cell} - 8px);
     height: calc(#{$narrow-cell} *10);
   }
+
+  @media #{$brk-mobile} {
+    margin-top: calc(#{$narrow-cell} * 3);
+    width: calc(#{$narrow-cell} * 3 - 20px);
+    margin-left: calc(#{$narrow-cell} - 8px);
+    height: calc(#{$narrow-cell} *12);
+  }
 }
 
 .incut {
@@ -313,6 +330,13 @@ h3 {
 
   @media #{$brk-narrow} {
     margin-top: -8px;
+    width: calc(#{$narrow-cell} * 3);
+    margin-left: calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 8);
+  }
+
+  @media #{$brk-mobile} {
+    margin-top: 0;
     width: calc(#{$narrow-cell} * 3);
     margin-left: calc(#{$narrow-cell} * 2);
     height: calc(#{$narrow-cell} * 8);
@@ -516,54 +540,36 @@ h3 {
 .about {
   font-weight: 800;
   text-align: right;
-  @media
 
-  #{$brk-medium} {
-
+  @media  #{$brk-medium} {
+    margin-left: calc(#{$cell} * 2.5);
     width:calc(#{$cell} * 2);
     font-size: 16px;
     line-height: 22px;
   }
-
-
-  @media  #{$brk-medium} {
-
-    margin-left: $cell;
-  }
-
-  @media #{$brk-narrow}
-
-   {
+  @media #{$brk-narrow}  {
     margin-left: calc(#{$narrow-cell} * 2);
     width:calc(#{$narrow-cell} * 3);
-
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 2vw;
+    line-height: 3vw;
   }
 }
 
 .about_names {
   font-weight: 800;
   text-align: left;
-
-  //text-transform: uppercase;
-  @media
-
-  #{$brk-medium} {
+  @media #{$brk-medium} {
     margin-left: 10px;
     width:calc(#{$cell} * 2);
     font-size: 16px;
     line-height: 22px;
   }
 
-  @media #{$brk-narrow}
-
-   {
-    margin-left: calc(#{$narrow-cell} * 2);
-    width:calc(#{$narrow-cell} * 3);
-    font-size: 21px;
-    line-height: 32px;
-
+  @media #{$brk-narrow} {
+    margin-left: 10px;
+    width:calc(#{$narrow-cell} * 2);
+    font-size: 2vw;
+    line-height: 3vw;
   }
 }
 
