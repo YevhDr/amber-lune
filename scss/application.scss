@@ -49,8 +49,8 @@ body {
     margin: 0 auto;
     width:$rect;
     background-size: $cell $cell;
-    background-image: linear-gradient(to right, #585858 1px, transparent 1px),
-    linear-gradient(to bottom, #585858 1px, #414141 1px);
+    background-image: linear-gradient(to right, #7f7f7f 0.25px, transparent 1px),
+    linear-gradient(to bottom, #7f7f7f 1px, #464646 0.25px);
   }
 
   @media #{$brk-narrow},
@@ -220,6 +220,10 @@ h3 {
     height: calc(#{$narrow-cell} * 3);
     margin-top: calc(#{$narrow-cell} * 3);
   }
+}
+
+.top-margin {
+  margin-top: 40px;
 }
 
 .bottom-margin {
@@ -600,7 +604,7 @@ h3 {
     margin-top: $cell;
     margin-left:calc(#{$cell} * 2);
     width: calc(#{$cell} * 3);
-    height: calc(#{$cell} * 4);
+    height: calc(#{$cell} * 3);
     font-size: 21px;
     line-height: 32px;
   }
@@ -614,6 +618,83 @@ h3 {
 
     font-size: 2.9vw;
     line-height: 3.8vw;
+  }
+}
+
+.incut5 {
+  text-align: center;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-top: $cell;
+    margin-left: $cell;
+    width:calc(#{$cell} * 7);
+    height: $cell;
+    vertical-align: top;
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 900;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top:$narrow-cell;
+    margin-left: $narrow-cell;
+    width:calc(#{$narrow-cell} * 7);
+    height: $narrow-cell;
+    vertical-align: top;
+    font-size: 2vw;
+    line-height: 2.7vw;
+    font-weight: 900;
+  }
+}
+
+.about {
+  font-weight: 800;
+  text-align: right;
+
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-left: calc(#{$cell} * 2);
+    width:calc(#{$cell} * 3);
+    font-size: 16px;
+    line-height: 22px;
+  }
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-left: calc(#{$narrow-cell} * 2);
+    width:calc(#{$narrow-cell} * 3);
+
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+.about_names {
+  font-weight: 800;
+  text-align: left;
+  //text-transform: uppercase;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-left: 10px;
+    width:calc(#{$cell} * 3);
+    font-size: 16px;
+    line-height: 22px;
+
+
+  }
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-left: calc(#{$narrow-cell} * 2);
+    width:calc(#{$narrow-cell} * 3);
+    font-size: 21px;
+    line-height: 32px;
+
   }
 }
 
