@@ -183,10 +183,9 @@ h3 {
   #{$brk-large},
   #{$brk-medium} {
     font-size: 35px;
-    line-height: 47px;
+    line-height: 50px;
     width: calc(#{$cell} * 5);
-    margin-top: calc(#{$cell} );
-
+    margin-top: calc(#{$cell} - 8px);
     margin-left: calc(#{$cell} - 8px);
   }
 
@@ -244,7 +243,7 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    margin-top:calc(#{$cell} * 3 - 8px);
+    margin-top:calc(#{$cell} * 3);
     margin-left:calc(#{$cell} - 8px);
     width: calc(#{$cell} * 3);
     height: calc(#{$cell} * 6);
@@ -391,7 +390,7 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    margin-top:-8px;
+    margin-top:0;
     margin-left:calc(#{$cell} * 2);
     width: calc(#{$cell} * 3);
     height: calc(#{$cell} * 5);
@@ -448,7 +447,7 @@ h3 {
     margin-left:$cell;
     width:calc(#{$cell} * 3);
     height: $cell;
-    margin-top: calc(#{$cell} + 5px);
+    margin-top: $cell;
 
   }
 
