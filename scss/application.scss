@@ -9,7 +9,29 @@ $rect: 1280px;
 $cell: calc(#{$rect} / 9);
 $narrow-cell: calc(100vw / 9);
 
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
 
 body {
@@ -200,18 +222,17 @@ h3 {
   }
 }
 
-p {
-  margin-bottom: 40px;
+.bottom-margin {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-
+    margin-bottom: 40px;
   }
 
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-
+    margin-bottom: 5vw;
   }
 }
 
@@ -222,9 +243,9 @@ p {
     margin-top:calc(#{$cell} * 2 - 8px);
     margin-left:calc(#{$cell} - 8px);
     width: calc(#{$cell} * 3);
-    font-size: 1.5vw;
-    line-height: 2.5vw;
-
+    height: calc(#{$cell} * 6);
+    font-size: 21px;
+    line-height: 32px;
   }
 
   @media #{$brk-narrow},
@@ -233,11 +254,9 @@ p {
     margin-top: calc(#{$narrow-cell} * 2);
     width: calc(#{$narrow-cell} * 3);
     margin-left: calc(#{$narrow-cell});
-    font-size: 3vw;
-    line-height: 4vw;
-
+    font-size: 2.9vw;
+    line-height: 3.8vw;
   }
-
 }
 
 .incut {
@@ -245,11 +264,11 @@ p {
   #{$brk-large},
   #{$brk-medium} {
     margin-top:calc(#{$cell} * 3);
-    margin-left: calc(#{$cell} );
+    margin-left: calc(#{$cell} - 8px);
     width:calc(#{$cell} - 15px);
     vertical-align: top;
-    font-size: 2vw;
-    line-height: 3vw;
+    font-size: 34px;
+    line-height: 38px;
     font-weight: 900;
   }
 
@@ -264,7 +283,6 @@ p {
     line-height: 3vw;
     font-weight: 900;
   }
-
 }
 
 .img4 {
@@ -272,6 +290,7 @@ p {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
+    margin-left: 8px;
     width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 3);
     margin-top: $cell;
@@ -289,21 +308,316 @@ p {
 
 }
 
+.img5 {
+  vertical-align: top;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-left:calc(#{$cell} * 2);
+    width:calc(#{$cell} * 2);
+    height: calc(#{$cell} * 3);
+    margin-top: calc(#{$cell} + 8px);
 
+  }
 
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-left:calc(#{$narrow-cell} * 2);
+    width:calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 3);
+    margin-top: $narrow-cell;
 
-
-@media #{$brk-xlarge},
-#{$brk-large},
-#{$brk-medium} {
+  }
 
 }
 
-@media #{$brk-narrow},
-#{$brk-spnarrow},
-#{$brk-iphone} {
+.incut2 {
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-top:calc(#{$cell} * 2 );
+    margin-left: calc(#{$cell} - 8px);
+    width:calc(#{$cell} * 4 - 15px);
+    height: $cell;
+    vertical-align: top;
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 900;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top:calc(#{$narrow-cell} * 2);
+    margin-left: calc(#{$narrow-cell} - 8px);
+    width:calc(#{$narrow-cell} * 4 - 15px);
+    height: $narrow-cell;
+    vertical-align: top;
+    font-size: 2vw;
+    line-height: 2.7vw;
+    font-weight: 900;
+  }
+}
+
+.img6 {
+  vertical-align: top;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-left:calc(#{$cell} * 6);
+    width:$cell;
+    height: $cell;
+    margin-top: 0;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-left:calc(#{$narrow-cell} * 6);
+    width:$narrow-cell;
+    height:$narrow-cell;
+    margin-top: 0;
+
+  }
+}
+
+.paragraph2 {
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-top:-8px;
+    margin-left:calc(#{$cell} * 2);
+    width: calc(#{$cell} * 3);
+    height: calc(#{$cell} * 4);
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top: 0;
+    width: calc(#{$narrow-cell} * 3);
+    margin-left: calc(#{$narrow-cell} * 2);
+
+    font-size: 2.9vw;
+    line-height: 3.8vw;
+  }
+}
+
+.incut3 {
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-top:$cell;
+    margin-left: calc(#{$cell} * 2 - 8px);
+    width:calc(#{$cell} * 2 - 8px);
+    height: $cell;
+    vertical-align: top;
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 900;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top:$narrow-cell;
+    margin-left: calc(#{$narrow-cell} * 2);
+    width:calc(#{$narrow-cell} * 2 - 8px);
+    height: $narrow-cell;
+    vertical-align: top;
+    font-size: 2vw;
+    line-height: 2.7vw;
+    font-weight: 900;
+  }
+}
+
+
+.img7 {
+  vertical-align: top;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-left:$cell;
+    width:calc(#{$cell} * 3);
+    height: $cell;
+    margin-top: calc(#{$cell} + 5px);
+
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-left:$narrow-cell;
+    width:calc(#{$narrow-cell} * 3);
+    height:$narrow-cell;
+    margin-top: $narrow-cell;
+
+  }
 
 }
+
+.img8 {
+  vertical-align: top;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    width:calc(#{$cell} * 2);
+    height: calc(#{$cell} * 2);
+    margin-top: calc(#{$cell} * 2);
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    width:calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 2);
+    margin-top: calc(#{$narrow-cell} * 2);
+  }
+}
+
+.paragraph3 {
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-top:$cell;
+    margin-left: - 6px;
+    width: calc(#{$cell} * 3 - 8px);
+    height: calc(#{$cell} * 7);
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top: $narrow-cell;
+    width: calc(#{$narrow-cell} * 3 - 8px);
+    font-size: 2.9vw;
+    line-height: 3.8vw;
+  }
+}
+
+.img9 {
+  vertical-align: top;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    width:calc(#{$cell} * 2 - 5px);
+    height: calc(#{$cell} * 2);
+    margin-top: calc(#{$cell} * 5);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    width:calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 2);
+    margin-top: calc(#{$narrow-cell} * 5);
+    //margin-left: calc(#{$cell} * 2);
+  }
+}
+
+.img10 {
+  vertical-align: top;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    width:calc(#{$cell} * 2 - 8px);
+    height: calc(#{$cell} * 3);
+    margin-top: 0;
+
+    padding:0;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    width:calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 3);
+    margin-top: 0;
+
+  }
+}
+
+.img11 {
+  vertical-align: top;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    width:calc(#{$cell} * 2);
+    height: calc(#{$cell} * 2);
+    margin-top: calc(#{$cell} * 2);
+    margin-left:$cell;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    width:calc(#{$narrow-cell} * 2);
+    height: calc(#{$narrow-cell} * 2);
+    margin-top: calc(#{$narrow-cell} * 2);
+    margin-left:$narrow-cell;
+  }
+}
+
+.incut4 {
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-top: calc(#{$cell} * 2);
+    margin-left: 0;
+    width:calc(#{$cell} * 4);
+    height: $cell;
+    vertical-align: top;
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 900;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top:$narrow-cell;
+    margin-left: -8px;
+    width:calc(#{$narrow-cell} * 4);
+    height: $narrow-cell;
+    vertical-align: top;
+    font-size: 2vw;
+    line-height: 2.7vw;
+    font-weight: 900;
+  }
+}
+
+.paragraph4 {
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    margin-top: $cell;
+    margin-left:calc(#{$cell} * 2);
+    width: calc(#{$cell} * 3);
+    height: calc(#{$cell} * 4);
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top: $narrow-cell;
+    width: calc(#{$narrow-cell} * 3);
+    margin-left: calc(#{$narrow-cell} * 2);
+
+    font-size: 2.9vw;
+    line-height: 3.8vw;
+  }
+}
+
+
 
 
 
