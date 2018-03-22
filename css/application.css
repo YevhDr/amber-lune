@@ -339,7 +339,8 @@ h3 {
   .paragraph1 {
     margin-top: calc(calc(100vw / 9 - 1px) * 3 - 8px);
     width: calc(calc(100vw / 9 - 1px) * 3 - 20px);
-    margin-left: calc(calc(100vw / 9 - 1px) - 8px); } }
+    margin-left: calc(calc(100vw / 9 - 1px) - 8px);
+    height: calc(calc(100vw / 9 - 1px) *11); } }
 
 @media (min-width: 1280px) {
   .incut {
@@ -430,15 +431,16 @@ h3 {
 
 @media (min-width: 1280px) {
   .paragraph2 {
-    margin-top: 0;
+    margin-top: -8px;
     margin-left: calc(calc(1280px / 9 - 1px) * 2);
     width: calc(calc(1280px / 9 - 1px) * 3);
     height: calc(calc(1280px / 9 - 1px) * 5); } }
 @media (max-width: 1279px) {
   .paragraph2 {
-    margin-top: 0;
+    margin-top: -8px;
     width: calc(calc(100vw / 9 - 1px) * 3);
-    margin-left: calc(calc(100vw / 9 - 1px) * 2); } }
+    margin-left: calc(calc(100vw / 9 - 1px) * 2);
+    height: calc(calc(100vw / 9 - 1px) * 8); } }
 
 @media (min-width: 1280px) {
   .incut3 {
@@ -497,8 +499,10 @@ h3 {
     height: calc(calc(1280px / 9 - 1px) * 7); } }
 @media (max-width: 1279px) {
   .paragraph3 {
-    margin-top: calc(100vw / 9 - 1px);
-    width: calc(calc(100vw / 9 - 1px) * 3 - 15px); } }
+    margin-left: -8px;
+    margin-top: calc(calc(100vw / 9 - 1px));
+    width: calc(calc(100vw / 9 - 1px) * 3 - 15px);
+    height: calc(calc(100vw / 9 - 1px) * 14); } }
 
 .img9 {
   vertical-align: top; }
@@ -560,7 +564,7 @@ h3 {
     font-weight: 900; } }
 @media (max-width: 1279px) {
   .incut4 {
-    margin-top: calc(100vw / 9 - 1px);
+    margin-top: calc(calc(100vw / 9 - 1px) * 2);
     margin-left: -8px;
     width: calc(calc(100vw / 9 - 1px) * 4);
     height: calc(100vw / 9 - 1px);
