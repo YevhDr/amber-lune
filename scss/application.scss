@@ -186,7 +186,7 @@ h3 {
     line-height: 50px;
     width: calc(#{$cell} * 5);
     margin-top: calc(#{$cell} - 5px);
-    margin-bottom: #{$cell};
+
     margin-left: calc(#{$cell} - 8px);
   }
 
@@ -210,7 +210,7 @@ h3 {
   #{$brk-medium} {
     width:$cell;
     height: calc(#{$cell} * 3);
-    margin-top: calc(#{$cell} * 3);
+    margin-top: calc(#{$cell} * 4);
   }
 
   @media #{$brk-narrow},
@@ -244,7 +244,7 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    margin-top:calc(#{$cell} * 2 - 8px);
+    margin-top:calc(#{$cell} * 3 - 8px);
     margin-left:calc(#{$cell} - 8px);
     width: calc(#{$cell} * 3);
     height: calc(#{$cell} * 6);
@@ -267,7 +267,8 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    margin-top:calc(#{$cell} * 3);
+    position:absolute;
+    margin-top:calc(#{$cell} * 4);
     margin-left: calc(#{$cell} - 8px);
     width:calc(#{$cell} - 15px);
     vertical-align: top;
@@ -294,10 +295,10 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    margin-left: 8px;
+    margin-left: calc(#{$cell} * 2 - 8px);
     width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 3);
-    margin-top: $cell;
+    margin-top: calc(#{$cell} * 2);
 
   }
 
