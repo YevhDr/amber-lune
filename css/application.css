@@ -230,7 +230,7 @@ body {
     margin: 0 auto;
     width: 1280px;
     background-size: calc(1280px / 9) calc(1280px / 9);
-    background-image: linear-gradient(to right, #7b7a7a 0.25px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 0.25px); } }
+    background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   .main-content {
     width: 100%;
@@ -269,7 +269,7 @@ h1 {
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     h1 {
       font-size: 151px;
-      line-height: 150px;
+      line-height: 145px;
       margin-left: calc(1280px / 9);
       margin-top: calc(-1280px / 9);
       vertical-align: top; }
@@ -290,7 +290,7 @@ h1 {
     .img2 {
       width: calc(calc(1280px / 9) * 3);
       height: calc(calc(1280px / 9) * 2);
-      margin-top: calc(1280px / 9); } }
+      margin-top: calc(calc(1280px / 9) ); } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     .img2 {
       width: calc(calc(100vw / 9) * 3);
@@ -304,9 +304,9 @@ h3 {
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     h3 {
       font-size: 35px;
-      line-height: 50px;
+      line-height: 47px;
       width: calc(calc(1280px / 9) * 5);
-      margin-top: calc(calc(1280px / 9) - 5px);
+      margin-top: calc(calc(1280px / 9) );
       margin-left: calc(calc(1280px / 9) - 8px); } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     h3 {
@@ -397,7 +397,7 @@ h3 {
       margin-left: calc(calc(1280px / 9) * 2);
       width: calc(calc(1280px / 9) * 2);
       height: calc(calc(1280px / 9) * 3);
-      margin-top: calc(calc(1280px / 9) + 8px); } }
+      margin-top: calc(calc(1280px / 9) - 5px); } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     .img5 {
       margin-left: calc(calc(100vw / 9) * 2);
@@ -407,7 +407,7 @@ h3 {
 
 @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
   .incut2 {
-    margin-top: calc(calc(1280px / 9) * 2 );
+    margin-top: calc(calc(1280px / 9) * 2 - 8px);
     margin-left: calc(calc(1280px / 9) - 8px);
     width: calc(calc(1280px / 9) * 4 - 15px);
     height: calc(1280px / 9);
@@ -446,7 +446,7 @@ h3 {
     margin-top: -8px;
     margin-left: calc(calc(1280px / 9) * 2);
     width: calc(calc(1280px / 9) * 3);
-    height: calc(calc(1280px / 9) * 4);
+    height: calc(calc(1280px / 9) * 5);
     font-size: 21px;
     line-height: 32px; } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
@@ -526,10 +526,10 @@ h3 {
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     .img9 {
       position: absolute;
-      left: calc(calc(1280px / 9) * 5);
+      margin-left: calc(calc(1280px / 9) * 5);
+      top: calc(calc(1280px / 9) * 32);
       width: calc(calc(1280px / 9) * 3);
-      height: calc(calc(1280px / 9) * 2);
-      margin-top: calc(calc(1280px / 9) * 5); } }
+      height: calc(calc(1280px / 9) * 2); } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     .img9 {
       width: calc(calc(100vw / 9) * 2);
@@ -631,10 +631,18 @@ h3 {
   text-align: right; }
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     .about {
-      margin-left: calc(calc(1280px / 9) * 2);
       width: calc(calc(1280px / 9) * 3);
       font-size: 16px;
       line-height: 22px; } }
+  @media (max-width: 2570px) {
+    .about {
+      margin-left: calc(calc(1280px / 9) * 3); } }
+  @media (max-width: 1440px) {
+    .about {
+      margin-left: calc(calc(1280px / 9) * 2); } }
+  @media (max-width: 1285px) {
+    .about {
+      margin-left: calc(1280px / 9); } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     .about {
       margin-left: calc(calc(100vw / 9) * 2);
@@ -648,7 +656,7 @@ h3 {
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     .about_names {
       margin-left: 10px;
-      width: calc(calc(1280px / 9) * 3);
+      width: calc(calc(1280px / 9) * 2);
       font-size: 16px;
       line-height: 22px; } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {

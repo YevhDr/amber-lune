@@ -49,8 +49,8 @@ body {
     margin: 0 auto;
     width:$rect;
     background-size: $cell $cell;
-    background-image: linear-gradient(to right, #7b7a7a 0.25px, transparent 1px),
-    linear-gradient(to bottom, #7b7a7a 1px, #706f6f 0.25px);
+    background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px),
+    linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px);
   }
 
   @media #{$brk-narrow},
@@ -131,7 +131,7 @@ h1 {
   #{$brk-large},
   #{$brk-medium} {
     font-size:151px;
-    line-height: 150px;
+    line-height: 145px;
     margin-left:$cell;
     margin-top:calc(-1280px / 9);
     vertical-align: top;
@@ -161,7 +161,7 @@ h1 {
   #{$brk-medium} {
     width:calc(#{$cell} * 3);
     height: calc(#{$cell} * 2);
-    margin-top: $cell;
+    margin-top: calc(#{$cell} );
   }
 
   @media #{$brk-narrow},
@@ -183,9 +183,9 @@ h3 {
   #{$brk-large},
   #{$brk-medium} {
     font-size: 35px;
-    line-height: 50px;
+    line-height: 47px;
     width: calc(#{$cell} * 5);
-    margin-top: calc(#{$cell} - 5px);
+    margin-top: calc(#{$cell} );
 
     margin-left: calc(#{$cell} - 8px);
   }
@@ -321,7 +321,7 @@ h3 {
     margin-left:calc(#{$cell} * 2);
     width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 3);
-    margin-top: calc(#{$cell} + 8px);
+    margin-top: calc(#{$cell} - 5px);
 
   }
 
@@ -341,7 +341,7 @@ h3 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    margin-top:calc(#{$cell} * 2 );
+    margin-top:calc(#{$cell} * 2 - 8px);
     margin-left: calc(#{$cell} - 8px);
     width:calc(#{$cell} * 4 - 15px);
     height: $cell;
@@ -394,7 +394,7 @@ h3 {
     margin-top:-8px;
     margin-left:calc(#{$cell} * 2);
     width: calc(#{$cell} * 3);
-    height: calc(#{$cell} * 4);
+    height: calc(#{$cell} * 5);
     font-size: 21px;
     line-height: 32px;
   }
@@ -511,10 +511,11 @@ h3 {
   #{$brk-large},
   #{$brk-medium} {
     position:absolute;
-    left: calc(#{$cell} * 5);
+    margin-left: calc(#{$cell} * 5);
+    top: calc(#{$cell} * 32);
     width:calc(#{$cell} * 3);
     height: calc(#{$cell} * 2);
-    margin-top: calc(#{$cell} * 5);
+
 
   }
 
@@ -656,15 +657,29 @@ h3 {
 .about {
   font-weight: 800;
   text-align: right;
-
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    margin-left: calc(#{$cell} * 2);
+
     width:calc(#{$cell} * 3);
     font-size: 16px;
     line-height: 22px;
   }
+  @media #{$brk-xlarge} {
+
+    margin-left: calc(#{$cell} * 3);
+  }
+
+  @media #{$brk-large} {
+
+    margin-left: calc(#{$cell} * 2);
+  }
+
+  @media  #{$brk-medium} {
+
+    margin-left: $cell;
+  }
+
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
@@ -679,17 +694,17 @@ h3 {
 .about_names {
   font-weight: 800;
   text-align: left;
+
   //text-transform: uppercase;
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
     margin-left: 10px;
-    width:calc(#{$cell} * 3);
+    width:calc(#{$cell} * 2);
     font-size: 16px;
     line-height: 22px;
-
-
   }
+
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
