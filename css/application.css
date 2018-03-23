@@ -231,6 +231,9 @@ body {
   color: white;
   background-color: #706f6f; }
 
+.link {
+  border-bottom: 1px dashed white; }
+
 @media (min-width: 1280px) {
   .main-content {
     border: solid #7b7a7a 1px;
@@ -245,6 +248,9 @@ body {
     width: calc(100vw - (calc(100vw / 11)) * 2);
     background-size: calc(100vw / 11) calc(100vw / 11);
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
+@media (max-width: 699px) {
+  .main-content {
+    display: none; } }
 
 @media (min-width: 1280px) {
   .top {
@@ -688,13 +694,13 @@ h3 {
   text-align: left; }
   @media (min-width: 1280px) {
     .about_names {
-      margin-left: 10px;
+      margin-left: 30px;
       width: calc(128px * 2);
       font-size: 16px;
       line-height: 22px; } }
   @media (max-width: 1279px) {
     .about_names {
-      margin-left: 10px;
+      margin-left: 30px;
       width: calc(calc(100vw / 11) * 2);
       font-size: 2vw;
       line-height: 3vw; } }

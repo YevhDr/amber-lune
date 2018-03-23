@@ -22,7 +22,10 @@ body {
   color:white;
   background-color: #706f6f;
   //overflow-x: hidden;
+}
 
+.link {
+  border-bottom: 1px dashed white;
 }
 
 
@@ -46,6 +49,11 @@ body {
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px),
     linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px);
   }
+
+  @media #{$brk-mobile}{
+    display:none;
+  }
+
 }
 
 .top {
@@ -622,14 +630,14 @@ h3 {
   font-weight: 800;
   text-align: left;
   @media #{$brk-medium} {
-    margin-left: 10px;
+    margin-left: 30px;
     width:calc(#{$cell} * 2);
     font-size: 16px;
     line-height: 22px;
   }
 
   @media #{$brk-narrow} {
-    margin-left: 10px;
+    margin-left: 30px;
     width:calc(#{$narrow-cell} * 2);
     font-size: 2vw;
     line-height: 3vw;
