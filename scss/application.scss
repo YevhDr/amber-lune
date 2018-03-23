@@ -254,7 +254,7 @@ h3 {
 .incut {
   @media #{$brk-medium} {
     position:absolute;
-    top:calc(#{$cell} * 10);
+    top:calc(#{$cell} * 4);
     left: calc(#{$cell} * 6);
     width:calc(#{$cell} - 15px);
     vertical-align: top;
@@ -467,7 +467,7 @@ h3 {
   @media #{$brk-medium} {
     position:absolute;
     left: calc(#{$cell} * 5);
-    top: calc(#{$cell} * 33);
+    top: calc(#{$cell} * 5);
     width:calc(#{$cell} * 3);
     height: calc(#{$cell} * 2);
   }

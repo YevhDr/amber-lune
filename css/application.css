@@ -406,7 +406,7 @@ h3 {
 @media (min-width: 1280px) {
   .incut {
     position: absolute;
-    top: calc(128px * 10);
+    top: calc(128px * 4);
     left: calc(128px * 6);
     width: calc(128px - 15px);
     vertical-align: top;
@@ -583,7 +583,7 @@ h3 {
     .img9 {
       position: absolute;
       left: calc(128px * 5);
-      top: calc(128px * 33);
+      top: calc(128px * 5);
       width: calc(128px * 3);
       height: calc(128px * 2); } }
   @media (max-width: 1279px) {
