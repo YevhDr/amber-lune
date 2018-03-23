@@ -220,7 +220,7 @@ h3 {
     line-height: 32px;
   }
   @media #{$brk-narrow} {
-    font-size: 2vw;
+    font-size: 2.5vw;
     line-height: 3.2vw;
   }
 }
@@ -237,14 +237,14 @@ h3 {
     margin-top: calc(#{$narrow-cell} * 3);
     width: calc(#{$narrow-cell} * 3 - 20px);
     margin-left: calc(#{$narrow-cell} - 8px);
-    height: calc(#{$narrow-cell} *10);
+    height: calc(#{$narrow-cell} *13);
   }
 
   @media #{$brk-mobile} {
     margin-top: calc(#{$narrow-cell} * 3);
     width: calc(#{$narrow-cell} * 3 - 20px);
     margin-left: calc(#{$narrow-cell} - 8px);
-    height: calc(#{$narrow-cell} *13);
+    height: calc(#{$narrow-cell} *15);
   }
 }
 
@@ -366,14 +366,14 @@ h3 {
     margin-top:0;
     width: calc(#{$narrow-cell} * 3);
     margin-left: calc(#{$narrow-cell} * 2);
-    height: calc(#{$narrow-cell} * 8);
+    height: calc(#{$narrow-cell} * 9);
   }
 
   @media #{$brk-mobile} {
     margin-top: 0;
     width: calc(#{$narrow-cell} * 3);
     margin-left: calc(#{$narrow-cell} * 2);
-    height: calc(#{$narrow-cell} * 8);
+    height: calc(#{$narrow-cell} * 10);
   }
 }
 
@@ -447,14 +447,14 @@ h3 {
     margin-left: - 8px;
     margin-top: $narrow-cell;
     width: calc(#{$narrow-cell} * 3 - 15px);
-    height: calc(#{$narrow-cell} * 14);
+    height: calc(#{$narrow-cell} * 16);
   }
 
   @media #{$brk-mobile} {
     margin-left: -8px;
     margin-top: $narrow-cell;
     width: calc(#{$narrow-cell} * 3 - 15px);
-    height: calc(#{$narrow-cell} * 14);
+    height: calc(#{$narrow-cell} * 18);
   }
 
 }
@@ -472,7 +472,7 @@ h3 {
   @media #{$brk-narrow} {
     position:absolute;
     left: calc(#{$narrow-cell} * 5);
-    top: calc(#{$narrow-cell} * 44);
+    top: calc(#{$narrow-cell} * 47);
     width:calc(#{$narrow-cell} * 3);
     height: calc(#{$narrow-cell} * 2);
   }
@@ -623,7 +623,7 @@ h3 {
 
 //footer
 #footer {
-  margin:100px 0 auto auto;
+  margin:50px 0 auto auto;
   position: relative;
   bottom: 0;
   background-color: #080808;
@@ -632,9 +632,11 @@ h3 {
 
   @media #{$brk-medium} {
     width: 100%;
+    margin:100px 0 auto auto;
   }
   @media #{$brk-narrow} {
     width: 100%;
+    margin:50px 0 auto auto;
   }
 }
 
