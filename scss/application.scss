@@ -92,8 +92,8 @@ body {
 
 .block {
   display:inline-block;
-  font-size: 0;
-  line-height: 0;
+  //font-size: 0;
+  //line-height: 0;
 
 }
 
@@ -175,6 +175,7 @@ h3 {
   vertical-align: baseline;
 
   @media #{$brk-medium} {
+    height:calc(#{$cell} * 2);
     font-size: 28px;
     line-height: 44px;
     width: calc(#{$cell} * 4.8);
