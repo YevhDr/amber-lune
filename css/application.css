@@ -229,7 +229,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, p {
 body {
   font-family: "Anonymous Pro", sans-serif !important;
   color: white;
-  background-color: #706f6f; }
+  background-color: #706f6f;
+  overflow-x: hidden; }
 
 @media (min-width: 1280px) {
   .main-content {
@@ -702,5 +703,77 @@ h3 {
       width: calc(calc(100vw / 9 - 1px) * 2);
       font-size: 2vw;
       line-height: 3vw; } }
+
+#footer {
+  margin: 100px 0 auto auto;
+  position: relative;
+  bottom: 0;
+  min-height: 170px;
+  background-color: #080808;
+  text-align: left;
+  display: block; }
+  @media (min-width: 1280px) {
+    #footer {
+      width: 100%; } }
+  @media (max-width: 1279px) {
+    #footer {
+      width: 100%; } }
+
+#footer-content {
+  margin-left: 50px;
+  margin-right: 50px; }
+  @media (min-width: 1280px) {
+    #footer-content {
+      max-width: 1280px; } }
+  @media (max-width: 1279px) {
+    #footer-content {
+      max-width: 100%; } }
+
+.links li {
+  color: #fff; }
+  @media (min-width: 1280px) {
+    .links li {
+      margin-left: 100px;
+      font-size: 1vw;
+      line-height: 2vw; } }
+  @media (max-width: 1279px) {
+    .links li {
+      display: none; } }
+
+.copyright {
+  float: left;
+  margin-top: 20px;
+  font-size: 1vw;
+  line-height: 1.4vw;
+  color: #fff; }
+  @media (min-width: 1280px) {
+    .copyright {
+      font-size: 1vw;
+      line-height: 1.4vw; } }
+  @media (max-width: 1279px) {
+    .copyright {
+      font-size: 1.8vw;
+      line-height: 2vw;
+      margin-bottom: 40px; } }
+
+.copying-info {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #ffffff; }
+  @media (min-width: 1280px) {
+    .copying-info {
+      width: calc(calc(1280px / 9 - 1px) * 7);
+      font-size: 1vw;
+      line-height: 1.4vw; } }
+  @media (max-width: 1279px) {
+    .copying-info {
+      width: calc(calc(100vw / 9 - 1px) * 7);
+      font-size: 1.8vw;
+      line-height: 2vw; } }
+
+.support-site:link,
+.support-site:visited {
+  color: #FAA61A !important;
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=application.css.map */
