@@ -626,7 +626,6 @@ h3 {
   margin:100px 0 auto auto;
   position: relative;
   bottom: 0;
-  min-height: 170px;
   background-color: #080808;
   text-align: left;
   display: block;
@@ -680,7 +679,7 @@ h3 {
   @media #{$brk-narrow} {
     font-size:1.8vw;
     line-height:2vw;
-    margin-bottom: 20px;
+
   }
 
 
