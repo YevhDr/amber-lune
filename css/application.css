@@ -240,23 +240,21 @@ body {
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
 @media (max-width: 1279px) {
   .main-content {
-    border: solid #7b7a7a 1px;
     margin-left: calc(100vw / 11);
     margin-right: calc(100vw / 11);
-    width: calc(100% - (calc(100vw / 11)) * 2);
+    width: calc(100vw - (calc(100vw / 11)) * 2);
     background-size: calc(100vw / 11) calc(100vw / 11);
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
 
 @media (min-width: 1280px) {
   .top {
-    width: 1280px;
+    width: calc(128px * 9);
     height: 128px;
     vertical-align: middle; } }
 @media (max-width: 1279px) {
   .top {
     width: 100%;
-    min-height: calc(100vw / 11);
-    max-height: calc(calc(100vw / 11) * 3);
+    height: calc(100vw / 11);
     vertical-align: middle; } }
 
 @media (min-width: 1280px) {
@@ -278,7 +276,9 @@ body {
   line-height: 0; }
 
 .block {
-  display: inline-block; }
+  display: inline-block;
+  font-size: 0;
+  line-height: 0; }
 
 @media (min-width: 1280px) {
   .img1 {
@@ -312,13 +312,15 @@ h1 {
   @media (max-width: 1279px) {
     h1 {
       width: calc(calc(100vw / 11) * 4);
-      font-size: 11vw;
-      line-height: 11vw;
+      font-size: 10vw;
+      line-height: 10vw;
       margin-left: calc(100vw / 11);
-      margin-top: calc(-100vw / 9);
+      margin-top: calc(-100vw / 11);
+      height: calc(calc(100vw / 11) * 2);
       vertical-align: top; } }
 
 .img2 {
+  position: relative;
   vertical-align: top; }
   @media (min-width: 1280px) {
     .img2 {
@@ -344,10 +346,11 @@ h3 {
       margin-left: 128px; } }
   @media (max-width: 1279px) {
     h3 {
-      font-size: 2.6vw;
-      line-height: 3.8vw;
-      width: calc(calc(100vw / 11) * 4.8 - 8px);
-      margin-top: calc(100vw / 11);
+      height: calc(calc(100vw / 11) * 3);
+      font-size: 2.2vw;
+      line-height: 3.2vw;
+      width: calc(calc(100vw / 11) * 4.8);
+      margin-top: calc(calc(100vw / 11) - 8px);
       margin-bottom: calc(100vw / 11);
       margin-left: calc(calc(100vw / 11)); } }
   @media (max-width: 699px) {
@@ -366,7 +369,7 @@ h3 {
     .img3 {
       width: calc(100vw / 11);
       height: calc(calc(100vw / 11) * 3);
-      margin-top: calc(calc(100vw / 11) * 3); } }
+      margin-top: calc(calc(100vw / 11) * 4); } }
 
 .top-margin {
   margin-top: 40px; }
@@ -384,8 +387,8 @@ h3 {
     line-height: 32px; } }
 @media (max-width: 1279px) {
   .paragraph {
-    font-size: 2.5vw;
-    line-height: 3.2vw; } }
+    font-size: 2.2vw;
+    line-height: 3.1vw; } }
 
 @media (min-width: 1280px) {
   .paragraph1 {
@@ -395,16 +398,18 @@ h3 {
     height: calc(128px * 8); } }
 @media (max-width: 1279px) {
   .paragraph1 {
-    margin-top: calc(calc(100vw / 11) * 3);
-    width: calc(calc(100vw / 11) * 3 - 20px);
+    position: relative;
+    vertical-align: top;
+    margin-top: calc(calc(100vw / 11) * 3 - 8px);
+    width: calc(calc(100vw / 11) * 3);
     margin-left: calc(100vw / 11);
-    height: calc(calc(100vw / 11) * 13); } }
+    height: calc(calc(100vw / 11) * 16); } }
 @media (max-width: 699px) {
   .paragraph1 {
     margin-top: calc(calc(100vw / 11) * 3);
     width: calc(calc(100vw / 11) * 3 - 20px);
     margin-left: calc(calc(100vw / 11) - 8px);
-    height: calc(calc(100vw / 11) *15); } }
+    height: calc(calc(100vw / 11) * 18); } }
 
 @media (min-width: 1280px) {
   .incut {
@@ -419,7 +424,7 @@ h3 {
 @media (max-width: 1279px) {
   .incut {
     position: absolute;
-    top: calc(calc(100vw / 11) * 10);
+    top: calc(calc(100vw / 11) * 4);
     left: calc(calc(100vw / 11) * 6);
     width: calc(calc(100vw / 11));
     vertical-align: top;
@@ -440,7 +445,7 @@ h3 {
       width: calc(calc(100vw / 11) * 2);
       height: calc(calc(100vw / 11) * 3);
       margin-top: calc(calc(100vw / 11) * 2);
-      margin-left: calc(calc(100vw / 11) * 2 + 2px); } }
+      margin-left: calc(calc(100vw / 11) * 2); } }
 
 .img5 {
   vertical-align: top; }
@@ -449,7 +454,7 @@ h3 {
       margin-left: calc(128px * 2);
       width: calc(128px * 2);
       height: calc(128px * 3);
-      margin-top: calc(128px - 5px); } }
+      margin-top: 128px; } }
   @media (max-width: 1279px) {
     .img5 {
       margin-left: calc(calc(100vw / 11) * 2);
@@ -469,9 +474,10 @@ h3 {
     font-weight: 900; } }
 @media (max-width: 1279px) {
   .incut2 {
-    margin-top: calc(calc(100vw / 11) * 2);
-    margin-left: calc(calc(100vw / 11) - 8px);
-    width: calc(calc(100vw / 11) * 4 - 15px);
+    position: relative;
+    margin-top: calc(100vw / 11);
+    margin-left: calc(100vw / 11);
+    width: calc(calc(100vw / 11) * 4);
     height: calc(100vw / 11);
     vertical-align: top;
     font-size: 3vw;
@@ -504,7 +510,7 @@ h3 {
     margin-top: 0;
     width: calc(calc(100vw / 11) * 3);
     margin-left: calc(calc(100vw / 11) * 2);
-    height: calc(calc(100vw / 11) * 9); } }
+    height: calc(calc(100vw / 11) * 12); } }
 @media (max-width: 699px) {
   .paragraph2 {
     margin-top: 0;
@@ -569,10 +575,10 @@ h3 {
     height: calc(128px * 9); } }
 @media (max-width: 1279px) {
   .paragraph3 {
-    margin-left: -8px;
-    margin-top: calc(100vw / 11);
-    width: calc(calc(100vw / 11) * 3 - 15px);
-    height: calc(calc(100vw / 11) * 16); } }
+    margin-left: 0;
+    margin-top: calc(calc(100vw / 11)  - 8px);
+    width: calc(calc(100vw / 11) * 3);
+    height: calc(calc(100vw / 11) * 20); } }
 @media (max-width: 699px) {
   .paragraph3 {
     margin-left: -8px;
@@ -593,7 +599,7 @@ h3 {
     .img9 {
       position: absolute;
       left: calc(calc(100vw / 11) * 5);
-      top: calc(calc(100vw / 11) * 47);
+      top: calc(calc(100vw / 11) * 5);
       width: calc(calc(100vw / 11) * 3);
       height: calc(calc(100vw / 11) * 2); } }
 
@@ -608,7 +614,7 @@ h3 {
       padding: 0; } }
   @media (max-width: 1279px) {
     .img10 {
-      margin-left: calc(calc(100vw / 11) * 2 - 8px);
+      margin-left: calc(calc(100vw / 11) * 2);
       width: calc(calc(100vw / 11) * 2);
       height: calc(calc(100vw / 11) * 3);
       margin-top: 0; } }
@@ -646,7 +652,7 @@ h3 {
     font-weight: 900; } }
 @media (max-width: 1279px) {
   .incut4 {
-    margin-top: calc(calc(100vw / 11) * 2);
+    margin-top: calc(calc(100vw / 11) * 2 - 8px);
     margin-left: 0;
     width: calc(calc(100vw / 11) * 4);
     height: calc(100vw / 11);
