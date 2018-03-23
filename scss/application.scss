@@ -192,10 +192,10 @@ h3 {
     margin-left: calc(#{$narrow-cell});
   }
 
-  @media #{$brk-mobile} {
-    font-size: 2.5vw;
-    line-height: 3.7vw;
-  }
+  //@media #{$brk-mobile} {
+  //  font-size: 2.5vw;
+  //  line-height: 3.7vw;
+  //}
 }
 
 
@@ -255,12 +255,12 @@ h3 {
     height: calc(#{$narrow-cell} * 16);
   }
 
-  @media #{$brk-mobile} {
-    margin-top: calc(#{$narrow-cell} * 3);
-    width: calc(#{$narrow-cell} * 3 - 20px);
-    margin-left: calc(#{$narrow-cell} - 8px);
-    height: calc(#{$narrow-cell} * 18);
-  }
+  //@media #{$brk-mobile} {
+  //  margin-top: calc(#{$narrow-cell} * 3);
+  //  width: calc(#{$narrow-cell} * 3 - 20px);
+  //  margin-left: calc(#{$narrow-cell} - 8px);
+  //  height: calc(#{$narrow-cell} * 18);
+  //}
 }
 
 .incut {
@@ -383,12 +383,12 @@ h3 {
     height: calc(#{$narrow-cell} * 12);
   }
 
-  @media #{$brk-mobile} {
-    margin-top: 0;
-    width: calc(#{$narrow-cell} * 3);
-    margin-left: calc(#{$narrow-cell} * 2);
-    height: calc(#{$narrow-cell} * 10);
-  }
+  //@media #{$brk-mobile} {
+  //  margin-top: 0;
+  //  width: calc(#{$narrow-cell} * 3);
+  //  margin-left: calc(#{$narrow-cell} * 2);
+  //  height: calc(#{$narrow-cell} * 10);
+  //}
 }
 
 .incut3 {
@@ -464,12 +464,12 @@ h3 {
     height: calc(#{$narrow-cell} * 20);
   }
 
-  @media #{$brk-mobile} {
-    margin-left: -8px;
-    margin-top: $narrow-cell;
-    width: calc(#{$narrow-cell} * 3 - 15px);
-    height: calc(#{$narrow-cell} * 18);
-  }
+  //@media #{$brk-mobile} {
+  //  margin-left: -8px;
+  //  margin-top: $narrow-cell;
+  //  width: calc(#{$narrow-cell} * 3 - 15px);
+  //  height: calc(#{$narrow-cell} * 18);
+  //}
 
 }
 
@@ -511,12 +511,12 @@ h3 {
     margin-top: 0;
   }
 
-  @media #{$brk-mobile} {
-    margin-left: calc(#{$narrow-cell} * 2);
-    width:calc(#{$narrow-cell} * 2);
-    height: calc(#{$narrow-cell} * 3);
-    margin-top: 0;
-  }
+  //@media #{$brk-mobile} {
+  //  margin-left: calc(#{$narrow-cell} * 2);
+  //  width:calc(#{$narrow-cell} * 2);
+  //  height: calc(#{$narrow-cell} * 3);
+  //  margin-top: 0;
+  //}
 }
 
 .img11 {
