@@ -129,9 +129,11 @@ body {
 .height-2 {
   @media #{$brk-medium} {
     height: calc(#{$cell} * 2);
+    margin-top:0;
   }
   @media #{$brk-narrow} {
     height: calc(#{$narrow-cell} * 2);
+    margin-top:-8px;
   }
 }
 
@@ -153,7 +155,7 @@ h1 {
   @media #{$brk-narrow}  {
     width:calc(#{$narrow-cell} * 4);
     font-size:10vw;
-    line-height:10vw;
+    line-height:9.3vw;
     margin-left: #{$narrow-cell};
     margin-top: calc(-100vw / 11);
     height: calc(#{$narrow-cell} * 2);
@@ -175,7 +177,6 @@ h1 {
 
 .img2 {
   position: relative;
-  vertical-align: top;
   @media
 
   #{$brk-medium} {
@@ -239,13 +240,13 @@ h3 {
   @media #{$brk-medium} {
     width:$cell;
     height: calc(#{$cell} * 3);
-    margin-top: calc(#{$cell} * 4);
+    margin-top: calc(#{$narrow-cell} * 2 + 16px);
   }
 
   @media #{$brk-narrow} {
     width:$narrow-cell;
     height: calc(#{$narrow-cell} * 3);
-    margin-top: calc(#{$narrow-cell} * 4);
+    margin-top: calc(#{$narrow-cell} - 8px);
   }
 
   @media #{$brk-mobile} {
@@ -282,7 +283,7 @@ h3 {
 
 .paragraph1 {
   @media  #{$brk-medium} {
-    margin-top:calc(#{$cell} * 3);
+    margin-top:calc(#{$cell} * 2);
     margin-left:$cell;
     width: calc(#{$cell} * 3);
     height: calc(#{$cell} * 8);
@@ -291,7 +292,7 @@ h3 {
   @media #{$brk-narrow} {
     position: relative;
     vertical-align: top;
-    margin-top: calc(#{$narrow-cell} * 3 - 8px);
+    margin-top: calc(#{$narrow-cell} * 3 - 18px);
     width: calc(#{$narrow-cell} * 3);
     margin-left: $narrow-cell;
     height: calc(#{$narrow-cell} * 16);
@@ -303,7 +304,7 @@ h3 {
 .incut {
   @media #{$brk-medium} {
     position:absolute;
-    top:calc(#{$cell} * 4);
+    top:calc(#{$cell} * 2);
     left: calc(#{$cell} * 6);
     width:calc(#{$cell} - 15px);
     vertical-align: top;
@@ -333,13 +334,13 @@ h3 {
     margin-left: calc(#{$cell} * 2);
     width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 3);
-    margin-top: calc(#{$cell} * 2);
+    margin-top: $cell;
   }
 
   @media #{$brk-narrow} {
     width:calc(#{$narrow-cell} * 2);
     height: calc(#{$narrow-cell} * 3);
-    margin-top: calc(#{$narrow-cell} * 2);
+    margin-top: calc(#{$narrow-cell} * 2 - 8px);
     margin-left: calc(#{$narrow-cell} * 2);
   }
 
@@ -351,7 +352,6 @@ h3 {
 }
 
 .img5 {
-  vertical-align: top;
   @media #{$brk-medium} {
     margin-left:calc(#{$cell} * 2);
     width:calc(#{$cell} * 2);
@@ -397,14 +397,11 @@ h3 {
 }
 
 .img6 {
-  vertical-align: top;
-  @media
-
-  #{$brk-medium} {
+  @media #{$brk-medium} {
     margin-left:calc(#{$cell} * 6);
     width:$cell;
     height: $cell;
-    margin-top: 0;
+    margin-top: -8px;
   }
 
   @media #{$brk-narrow} {
@@ -421,10 +418,10 @@ h3 {
 
 .paragraph2 {
   @media #{$brk-medium} {
-    margin-top:0;
+    margin-top:-8px;
     margin-left:calc(#{$cell} * 2);
     width: calc(#{$cell} * 3);
-    height: calc(#{$cell} * 5);
+    height: calc(#{$cell} * 6);
   }
 
   @media #{$brk-narrow} {
@@ -468,19 +465,18 @@ h3 {
 
 
 .img7 {
-  vertical-align: top;
   @media #{$brk-medium} {
     margin-left:$cell;
     width:calc(#{$cell} * 3);
     height: $cell;
-    margin-top: $cell;
+    margin-top: calc(#{$cell} + 6px);
   }
 
   @media #{$brk-narrow}  {
     margin-left:$narrow-cell;
     width:calc(#{$narrow-cell} * 3);
     height:$narrow-cell;
-    margin-top: $narrow-cell;
+    margin-top: calc(#{$narrow-cell} - 10px);
   }
 
 }
@@ -505,7 +501,7 @@ h3 {
     margin-top: $cell;
     margin-left: 0;
     width: calc(#{$cell} * 3);
-    height: calc(#{$cell} * 9);
+    height: calc(#{$cell} * 10);
 }
 
   @media #{$brk-narrow} {
@@ -525,7 +521,6 @@ h3 {
 }
 
 .img9 {
-  vertical-align: top;
   @media #{$brk-medium} {
     position:absolute;
     left: calc(#{$cell} * 5);
@@ -571,11 +566,10 @@ h3 {
 }
 
 .img11 {
-  vertical-align: top;
   @media #{$brk-medium} {
     width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 2);
-    margin-top: calc(#{$cell} * 2);
+    margin-top: calc(#{$cell} * 1);
     margin-left:$cell;
   }
 
@@ -589,7 +583,7 @@ h3 {
 
 .incut4 {
   @media #{$brk-medium} {
-    margin-top: calc(#{$cell} * 2);
+    margin-top: calc(#{$cell} * 1);
     margin-left: 0;
     width:calc(#{$cell} * 4);
     height: $cell;
