@@ -223,8 +223,7 @@ a:hover {
 html, body, div, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
-  border: 0;
-  vertical-align: top; }
+  border: 0; }
 
 body {
   font-family: "Anonymous Pro", sans-serif !important;
@@ -261,6 +260,11 @@ body {
   .top {
     width: 100%;
     height: calc(100vw / 11);
+    vertical-align: middle; } }
+@media (max-width: 699px) {
+  .top {
+    width: 100%;
+    height: calc(calc(100vw / 11) * 2);
     vertical-align: middle; } }
 
 @media (min-width: 1280px) {
@@ -322,6 +326,15 @@ h1 {
       margin-top: calc(-100vw / 11);
       height: calc(calc(100vw / 11) * 2);
       vertical-align: top; } }
+  @media (max-width: 699px) {
+    h1 {
+      width: calc(calc(100vw / 11) * 4);
+      font-size: 10vw;
+      line-height: 9vw;
+      margin-left: calc(100vw / 11);
+      margin-top: calc(-100vw / 11);
+      height: calc(calc(100vw / 11) * 2);
+      vertical-align: top; } }
 
 .img2 {
   position: relative;
@@ -336,6 +349,9 @@ h1 {
       width: calc(calc(100vw / 11) * 3);
       height: calc(calc(100vw / 11) * 2);
       margin-top: calc(100vw / 11); } }
+  @media (max-width: 699px) {
+    .img2 {
+      display: none; } }
 
 h3 {
   text-transform: uppercase;
@@ -358,6 +374,15 @@ h3 {
       margin-top: calc(calc(100vw / 11) - 8px);
       margin-bottom: calc(100vw / 11);
       margin-left: calc(calc(100vw / 11)); } }
+  @media (max-width: 699px) {
+    h3 {
+      height: calc(calc(100vw / 11) * 3);
+      margin-bottom: 0;
+      margin-top: calc(100vw / 11);
+      margin-left: calc(100vw / 11);
+      width: calc(calc(100vw / 11) * 7);
+      font-size: 3.2vw;
+      line-height: 4.3vw; } }
 
 .img3 {
   vertical-align: top; }
@@ -371,6 +396,9 @@ h3 {
       width: calc(100vw / 11);
       height: calc(calc(100vw / 11) * 3);
       margin-top: calc(calc(100vw / 11) * 4); } }
+  @media (max-width: 699px) {
+    .img3 {
+      display: none; } }
 
 .top-margin {
   margin-top: 40px; }
@@ -381,6 +409,9 @@ h3 {
 @media (max-width: 1279px) {
   .bottom-margin {
     margin-bottom: 5vw; } }
+@media (max-width: 699px) {
+  .bottom-margin {
+    margin-bottom: 10px; } }
 
 @media (min-width: 1280px) {
   .paragraph {
@@ -426,6 +457,9 @@ h3 {
     font-size: 3vw;
     line-height: 4vw;
     font-weight: 900; } }
+@media (max-width: 699px) {
+  .incut {
+    display: none; } }
 
 .img4 {
   vertical-align: top; }
@@ -441,6 +475,9 @@ h3 {
       height: calc(calc(100vw / 11) * 3);
       margin-top: calc(calc(100vw / 11) * 2);
       margin-left: calc(calc(100vw / 11) * 2); } }
+  @media (max-width: 699px) {
+    .img4 {
+      display: none; } }
 
 .img5 {
   vertical-align: top; }
@@ -456,6 +493,9 @@ h3 {
       width: calc(calc(100vw / 11) * 2);
       height: calc(calc(100vw / 11) * 3);
       margin-top: calc(100vw / 11); } }
+  @media (max-width: 699px) {
+    .img5 {
+      display: none; } }
 
 @media (min-width: 1280px) {
   .incut2 {
@@ -493,6 +533,9 @@ h3 {
       width: calc(100vw / 11);
       height: calc(100vw / 11);
       margin-top: 0; } }
+  @media (max-width: 699px) {
+    .img6 {
+      display: none; } }
 
 @media (min-width: 1280px) {
   .paragraph2 {
@@ -704,6 +747,103 @@ h3 {
       width: calc(calc(100vw / 11) * 2);
       font-size: 2vw;
       line-height: 3vw; } }
+
+/*------------------------------------------
+------------ mobile version---------------*/
+@media (min-width: 1280px) {
+  .mob-container {
+    display: none; } }
+@media (max-width: 1279px) {
+  .mob-container {
+    display: none; } }
+@media (max-width: 699px) {
+  .mob-container {
+    display: block;
+    margin-left: calc(100vw / 11);
+    margin-right: calc(100vw / 11);
+    width: calc(100vw - (calc(100vw / 11)) * 2);
+    background-size: calc(100vw / 11) calc(100vw / 11);
+    background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
+
+@media (max-width: 699px) {
+  .mob-paragraph {
+    font-size: 3vw;
+    line-height: 3.4vw;
+    margin-top: calc(100vw / 11);
+    margin-left: calc(100vw / 11);
+    width: calc(calc(100vw / 11) * 7); } }
+
+@media (max-width: 699px) {
+  .mp-1 {
+    height: calc(100vw / 11); } }
+
+@media (max-width: 699px) {
+  .mp-2 {
+    height: calc(calc(100vw / 11) * 2); } }
+
+@media (max-width: 699px) {
+  .mp-3 {
+    height: calc(calc(100vw / 11) * 3); } }
+
+@media (max-width: 699px) {
+  .mp-4 {
+    height: calc(calc(100vw / 11) * 4); } }
+
+@media (max-width: 699px) {
+  .mp-5 {
+    height: calc(calc(100vw / 11) * 5); } }
+
+@media (max-width: 699px) {
+  .mp-6 {
+    height: calc(calc(100vw / 11) * 6); } }
+
+@media (max-width: 699px) {
+  .mp-7 {
+    height: calc(calc(100vw / 11) * 7); } }
+
+@media (max-width: 699px) {
+  .mp-8 {
+    height: calc(calc(100vw / 11) * 8); } }
+
+@media (max-width: 699px) {
+  .mp-9 {
+    height: calc(calc(100vw / 11) * 9); } }
+
+@media (max-width: 699px) {
+  .mp-10 {
+    height: calc(calc(100vw / 11) * 10); } }
+
+@media (max-width: 699px) {
+  .mp-11 {
+    height: calc(calc(100vw / 11) * 11); } }
+
+@media (min-width: 1280px) {
+  .mob-incut {
+    display: none; } }
+@media (max-width: 1279px) {
+  .mob-incut {
+    display: none; } }
+@media (max-width: 699px) {
+  .mob-incut {
+    display: block;
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 4vw;
+    margin-left: calc(100vw / 11);
+    width: calc(calc(100vw / 11) * 7); } }
+
+.img-container {
+  font-size: 0; }
+
+.mob-img1 {
+  margin-left: calc(100vw / 11);
+  width: calc(calc(100vw / 11) * 2);
+  height: calc(calc(100vw / 11) * 2); }
+
+.mob-img2 {
+  margin-left: calc(100vw / 11);
+  width: calc(calc(100vw / 11) * 2);
+  height: calc(calc(100vw / 11) * 2); }
 
 #footer {
   margin: 50px 0 auto auto;
