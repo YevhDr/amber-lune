@@ -6,7 +6,7 @@
 @import "components/weirdo";
 
 $cell: 128px;
-$narrow-cell: calc(100vw / 11 - 1px);
+$narrow-cell: calc(100vw / 11);
 
 html, body, div, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -37,10 +37,13 @@ body {
   }
 
   @media #{$brk-narrow}{
-    width:100%;
+    border:solid #7b7a7a 1px;
+    margin-left: $narrow-cell;
+    margin-right: $narrow-cell;
+    width: calc(100% - (#{$narrow-cell}) * 2);
     background-size: $narrow-cell $narrow-cell;
-    background-image: linear-gradient(to right, #7b7a7a 0.25px, transparent 0.25px),
-    linear-gradient(to bottom, #7b7a7a 0.25px, #706f6f 0.25px);
+    background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px),
+    linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px);
   }
 }
 
