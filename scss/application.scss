@@ -42,14 +42,25 @@ body {
   }
 }
 
-.names {
+.top, .bottom {
   @media #{$brk-medium} {
-    margin: 0 auto;
+    //margin: 0 auto;
     width: 1280px;
+    height: $cell;
+    vertical-align: middle;
   }
   @media #{$brk-narrow}{
     width: 100%;
+    min-height: $narrow-cell;
+    max-height: calc(#{$narrow-cell} * 3);
+    vertical-align: middle;
   }
+}
+
+.top, .social-icons {
+  //display:flex;
+  //flex-direction: row;
+  //justify-content: space-between;
 }
 
 .roww {
@@ -224,7 +235,7 @@ h3 {
 .incut {
   @media #{$brk-medium} {
     position:absolute;
-    top:calc(#{$cell} * 9);
+    top:calc(#{$cell} * 10);
     left: calc(#{$cell} * 6);
     width:calc(#{$cell} - 15px);
     vertical-align: top;
@@ -235,7 +246,7 @@ h3 {
 
   @media #{$brk-narrow} {
     position:absolute;
-    top:calc(#{$narrow-cell} * 9);
+    top:calc(#{$narrow-cell} * 10);
     left: calc(#{$narrow-cell} * 6);
     width:calc(#{$narrow-cell});
     vertical-align: top;
@@ -437,7 +448,7 @@ h3 {
   @media #{$brk-medium} {
     position:absolute;
     left: calc(#{$cell} * 5);
-    top: calc(#{$cell} * 30);
+    top: calc(#{$cell} * 33);
     width:calc(#{$cell} * 3);
     height: calc(#{$cell} * 2);
   }
@@ -445,7 +456,7 @@ h3 {
   @media #{$brk-narrow} {
     position:absolute;
     left: calc(#{$narrow-cell} * 5);
-    top: calc(#{$narrow-cell} * 40);
+    top: calc(#{$narrow-cell} * 44);
     width:calc(#{$narrow-cell} * 3);
     height: calc(#{$narrow-cell} * 2);
   }

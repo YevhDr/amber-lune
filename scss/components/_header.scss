@@ -1,29 +1,56 @@
 /* ======== HEADER ======== */
+.logo-buttons {
+  margin: 0 auto;
+}
 
-
-.logo {
-    position: fixed;
-    width: 10%;
+  .logo {
     float: left;
-    margin: 15px 0px 0px 25px;
+    margin-left: 20px;
+    padding-top:20px;
+    text-transform: uppercase;
+
+    font-weight: 900;
     z-index: 1000;
+    @media #{$brk-medium} {
+      font-size: 2.2vw;
+    }
+    @media #{$brk-narrow}{
+      font-size: 3vw;
+    }
 }
 
 .social-icons {
-  position: fixed;
-  padding-top: 10px;
-  z-index: 1000;
+  @media #{$brk-medium} {
+    //padding-top:20px;
+    font-size:2.2vw;
+    vertical-align: middle;
+
+  }
+  @media #{$brk-narrow}{
+    font-size: 3vw;
+    vertical-align: middle;
+  }
 }
 
 .fa-twitter,
 .fa-facebook {
-  //background-color:rgba(187, 189, 192, 0.9);
-  padding: 5px;
-  color: #8e8f91;
+  background-color:rgba(187, 189, 192, 0.9);
+  margin-top:20px;
+  padding: 3px;
+  color: #706f6f;
   float: right;
-  margin: 5px 10px 0px 0px;
+  margin-right: 20px;
   cursor: pointer;
   &:hover{
     color: $orange;
   }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  }
+
+a:hover {
+  color:$orange;
 }

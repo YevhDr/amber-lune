@@ -3,28 +3,51 @@ html {
   min-height: 100%; }
 
 /* ======== HEADER ======== */
-.logo {
-  position: fixed;
-  width: 10%;
-  float: left;
-  margin: 15px 0px 0px 25px;
-  z-index: 1000; }
+.logo-buttons {
+  margin: 0 auto; }
 
-.social-icons {
-  position: fixed;
-  padding-top: 10px;
+.logo {
+  float: left;
+  margin-left: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
   z-index: 1000; }
+  @media (min-width: 1280px) {
+    .logo {
+      font-size: 2.2vw; } }
+  @media (max-width: 1279px) {
+    .logo {
+      font-size: 3vw; } }
+
+@media (min-width: 1280px) {
+  .social-icons {
+    font-size: 2.2vw;
+    vertical-align: middle; } }
+@media (max-width: 1279px) {
+  .social-icons {
+    font-size: 3vw;
+    vertical-align: middle; } }
 
 .fa-twitter,
 .fa-facebook {
-  padding: 5px;
-  color: #8e8f91;
+  background-color: rgba(187, 189, 192, 0.9);
+  margin-top: 20px;
+  padding: 3px;
+  color: #706f6f;
   float: right;
-  margin: 5px 10px 0px 0px;
+  margin-right: 20px;
   cursor: pointer; }
   .fa-twitter:hover,
   .fa-facebook:hover {
     color: #FAA61A; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  color: #FAA61A; }
 
 /* ======== Footer ======== */
 .weirdo-container {
@@ -221,12 +244,16 @@ body {
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px), linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px); } }
 
 @media (min-width: 1280px) {
-  .names {
-    margin: 0 auto;
-    width: 1280px; } }
+  .top, .bottom {
+    width: 1280px;
+    height: calc(1280px / 9 - 1px);
+    vertical-align: middle; } }
 @media (max-width: 1279px) {
-  .names {
-    width: 100%; } }
+  .top, .bottom {
+    width: 100%;
+    min-height: calc(100vw / 9 - 1px);
+    max-height: calc(calc(100vw / 9 - 1px) * 3);
+    vertical-align: middle; } }
 
 .roww {
   display: inline-block; }
@@ -363,7 +390,7 @@ h3 {
 @media (min-width: 1280px) {
   .incut {
     position: absolute;
-    top: calc(calc(1280px / 9 - 1px) * 9);
+    top: calc(calc(1280px / 9 - 1px) * 10);
     left: calc(calc(1280px / 9 - 1px) * 6);
     width: calc(calc(1280px / 9 - 1px) - 15px);
     vertical-align: top;
@@ -373,7 +400,7 @@ h3 {
 @media (max-width: 1279px) {
   .incut {
     position: absolute;
-    top: calc(calc(100vw / 9 - 1px) * 9);
+    top: calc(calc(100vw / 9 - 1px) * 10);
     left: calc(calc(100vw / 9 - 1px) * 6);
     width: calc(calc(100vw / 9 - 1px));
     vertical-align: top;
@@ -540,14 +567,14 @@ h3 {
     .img9 {
       position: absolute;
       left: calc(calc(1280px / 9 - 1px) * 5);
-      top: calc(calc(1280px / 9 - 1px) * 30);
+      top: calc(calc(1280px / 9 - 1px) * 33);
       width: calc(calc(1280px / 9 - 1px) * 3);
       height: calc(calc(1280px / 9 - 1px) * 2); } }
   @media (max-width: 1279px) {
     .img9 {
       position: absolute;
       left: calc(calc(100vw / 9 - 1px) * 5);
-      top: calc(calc(100vw / 9 - 1px) * 40);
+      top: calc(calc(100vw / 9 - 1px) * 44);
       width: calc(calc(100vw / 9 - 1px) * 3);
       height: calc(calc(100vw / 9 - 1px) * 2); } }
 
