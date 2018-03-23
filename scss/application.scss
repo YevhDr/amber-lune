@@ -5,8 +5,8 @@
 @import "components/footer";
 @import "components/weirdo";
 
-$cell: calc(1280px / 9 - 1px);
-$narrow-cell: calc(100vw / 9 - 1px);
+$cell: 128px;
+$narrow-cell: calc(100vw / 11 - 1px);
 
 html, body, div, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -21,15 +21,16 @@ body {
   font-family: "Anonymous Pro", sans-serif!important;
   color:white;
   background-color: #706f6f;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 
 }
 
 
 .main-content {
   @media #{$brk-medium} {
+    border:solid #7b7a7a 1px;
     margin: 0 auto;
-    width:1280px;
+    width:calc(128px * 9);
     background-size: $cell $cell;
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px),
     linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px);
@@ -38,8 +39,8 @@ body {
   @media #{$brk-narrow}{
     width:100%;
     background-size: $narrow-cell $narrow-cell;
-    background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px),
-    linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px);
+    background-image: linear-gradient(to right, #7b7a7a 0.25px, transparent 0.25px),
+    linear-gradient(to bottom, #7b7a7a 0.25px, #706f6f 0.25px);
   }
 }
 
@@ -81,6 +82,8 @@ body {
 
 .roww {
   display:inline-block;
+  font-size: 0;
+  line-height: 0;
 }
 
 .block {
@@ -115,13 +118,13 @@ body {
 h1 {
   font-weight: 800;
   @media  #{$brk-medium} {
-    font-size:151px;
-    line-height: 145px;
+    font-size:137px;
+    line-height: 130px;
     margin-left:$cell;
-    margin-top:calc(-1280px / 9);
+    margin-top:-128px;
     vertical-align: top;
     h1:first-line {
-      line-height: 160px;
+      line-height: 150px;
     }
   }
 
@@ -163,11 +166,11 @@ h3 {
   vertical-align: baseline;
 
   @media #{$brk-medium} {
-    font-size: 35px;
-    line-height: 50px;
-    width: calc(#{$cell} * 5);
-    margin-top: calc(#{$cell} - 8px);
-    margin-left: calc(#{$cell} - 8px);
+    font-size: 28px;
+    line-height: 44px;
+    width: calc(#{$cell} * 4.8);
+    margin-top: $cell;
+    margin-left: $cell;
   }
 
   @media #{$brk-narrow} {
@@ -228,16 +231,16 @@ h3 {
 .paragraph1 {
   @media  #{$brk-medium} {
     margin-top:calc(#{$cell} * 3);
-    margin-left:calc(#{$cell} - 8px);
+    margin-left:$cell;
     width: calc(#{$cell} * 3);
-    height: calc(#{$cell} * 6);
+    height: calc(#{$cell} * 8);
   }
 
   @media #{$brk-narrow} {
     margin-top: calc(#{$narrow-cell} * 3);
     width: calc(#{$narrow-cell} * 3 - 20px);
-    margin-left: calc(#{$narrow-cell} - 8px);
-    height: calc(#{$narrow-cell} *13);
+    margin-left: $narrow-cell;
+    height: calc(#{$narrow-cell} * 13);
   }
 
   @media #{$brk-mobile} {
@@ -275,7 +278,7 @@ h3 {
 .img4 {
   vertical-align: top;
   @media #{$brk-medium} {
-    margin-left: calc(#{$cell} * 2 - 8px);
+    margin-left: calc(#{$cell} * 2);
     width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 3);
     margin-top: calc(#{$cell} * 2);
@@ -311,7 +314,7 @@ h3 {
 .incut2 {
   @media #{$brk-medium} {
     margin-top:calc(#{$cell} * 2 - 8px);
-    margin-left: calc(#{$cell} - 8px);
+    margin-left: $cell;
     width:calc(#{$cell} * 4 - 15px);
     height: $cell;
     vertical-align: top;
@@ -356,7 +359,7 @@ h3 {
 
 .paragraph2 {
   @media #{$brk-medium} {
-    margin-top:-8px;
+    margin-top:0;
     margin-left:calc(#{$cell} * 2);
     width: calc(#{$cell} * 3);
     height: calc(#{$cell} * 5);
@@ -380,8 +383,8 @@ h3 {
 .incut3 {
   @media  #{$brk-medium} {
     margin-top:$cell;
-    margin-left: calc(#{$cell} * 2 - 8px);
-    width:calc(#{$cell} * 2 - 8px);
+    margin-left: calc(#{$cell} * 2);
+    width:calc(#{$cell} * 2);
     height: $cell;
     vertical-align: top;
     font-size: 34px;
@@ -391,7 +394,7 @@ h3 {
 
   @media #{$brk-narrow}  {
     margin-top:$narrow-cell;
-    margin-left: calc(#{$narrow-cell} * 2 - 8px);
+    margin-left: calc(#{$narrow-cell} * 2);
     width:calc(#{$narrow-cell} * 2 - 8px);
     height: $narrow-cell;
     vertical-align: top;
@@ -438,9 +441,9 @@ h3 {
 .paragraph3 {
   @media #{$brk-medium} {
     margin-top: $cell;
-    margin-left: - 6px;
-    width: calc(#{$cell} * 3 - 8px);
-    height: calc(#{$cell} * 7);
+    margin-left: 0;
+    width: calc(#{$cell} * 3);
+    height: calc(#{$cell} * 9);
 }
 
   @media #{$brk-narrow} {
@@ -484,7 +487,7 @@ h3 {
   vertical-align: top;
   @media #{$brk-medium} {
     margin-left: calc(#{$cell} * 2);
-    width:calc(#{$cell} * 2 - 8px);
+    width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 3);
     margin-top: 0;
     padding:0;
@@ -511,7 +514,7 @@ h3 {
     width:calc(#{$cell} * 2);
     height: calc(#{$cell} * 2);
     margin-top: calc(#{$cell} * 2);
-    margin-left:calc(#{$cell} - 9px);
+    margin-left:$cell;
   }
 
   @media #{$brk-narrow}  {
