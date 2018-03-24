@@ -89,7 +89,6 @@ img {
 .main-gridlines {
   border-right: solid $grid-color 1px;
   border-bottom: solid $grid-color 1px;
-
   background-image: linear-gradient(to right, $grid-color 1px, transparent 1px),
   linear-gradient(to bottom, $grid-color 1px, $bg-color 1px);
 }
