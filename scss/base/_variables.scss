@@ -1,8 +1,6 @@
-
-
 //// colors
 
-$main-text: #343434;
+//$main-text: #343434;
 $white:#fff;
 $orange: #FAA61A;
 
@@ -12,10 +10,24 @@ $orange: #FAA61A;
 $footer-size: 0.7em;
 $footer-size-media: 0.5em;
 
-
 // Media query
 
+$cell: 128px;
 
-$brk-medium: '(min-width: 1280px)';
-$brk-narrow: '(max-width: 1279px)';
+$brk-fixed: '(min-width: #{$cell * 11})';
+$brk-fluid: '(max-width: #{$cell * 11 - 1})';
 $brk-mobile: '(max-width: 699px)';
+
+@mixin px2vw($param, $px) {
+  #{$param}: #{$px/($cell*11)*100}vw
+}
+
+//@mixin inpx($param, $px) {
+//  @media #{$brk-fixed} {
+//    font-size: #{$px};
+//  };
+//
+//  @media #{$brk-fluid} {
+//    $param: #{$px/($cell*11)*100}vw
+//  }
+//}

@@ -1,45 +1,34 @@
 /* ======== HEADER ======== */
-.logo-buttons {
-  margin: 0 auto;
-}
 
-  .logo {
-    float: left;
-    width:15%;
-    //margin-left: 20px;
-    padding-top:30px;
-    text-transform: uppercase;
-    font-weight: 900;
-    z-index: 1000;
-    @media #{$brk-medium} {
-      font-size: 2.1vw;
-    }
-    @media #{$brk-narrow}{
-      font-size: 3vw;
-    }
+.logo {
+  float: left;
+  width:20%!important; //add
+  margin-top: 20px;
+  //margin-left: 20px;
+  padding-top: 20px; //add
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: 1000;
+  @media #{$brk-fixed} {
+    font-size: 2.1vw;
+  }
+  @media #{$brk-fluid}{
+    font-size: 3vw;
+  }
 }
 
 .social-icons {
-  @media #{$brk-medium} {
-    //padding-top:20px;
     font-size:2.2vw;
     vertical-align: middle;
 
   }
-  @media #{$brk-narrow}{
-    font-size: 3vw;
-    vertical-align: middle;
-  }
-}
 
 .fa-twitter,
 .fa-facebook-square {
-  //background-color:rgba(187, 189, 192, 0.9);
   margin-top:30px;
   padding: 3px;
-
   float: right;
-  margin-right: 20px;
+  //margin-right: 10px;
   cursor: pointer;
   &:hover{
     color: $orange;
@@ -51,9 +40,9 @@
 }
 
 .fa-facebook-square {
-  //background-color: rgba(255, 255, 255, 0.9);
   color: #ffffff;
 }
+
 
 a {
   color: white;

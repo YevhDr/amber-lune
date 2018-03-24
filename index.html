@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="uk-UA">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Земляна проказа</title>
@@ -12,7 +13,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:title"
           content="Земляна проказа"/>
-    <meta property="og:image" content="http://texty.org.ua/amber-lune"/>
+    <meta property="og:image" content="http://texty.org.ua/d/2018/amber"/>
     <meta property="og:description"
           content="5.5 тисяч гектарів лісу перетворені на місячний ландшафт.
                     За допомогою волонтерів і з використанням супутникових карт Тексти визначили масштаби видобутку
@@ -23,14 +24,14 @@
     <meta name="twitter:site" content="@textyorgua"/>
     <meta property="twitter:account_id" content="49572937"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:url" content="http://texty.org.ua/amber-lune"/>
+    <meta name="twitter:url" content="http://texty.org.ua/d/2018/amber"/>
     <meta name="twitter:title"
           content="Земляна проказа"/>
     <meta name="twitter:description"
           content="5.5 тисяч гектарів лісу перетворені на місячний ландшафт.
                     За допомогою волонтерів і з використанням супутникових карт Тексти визначили масштаби видобутку
                     бурштину за останні роки."/>
-    <meta name="twitter:image:src" content="http://texty.org.ua/amber-lune/img/...."/>
+    <meta name="twitter:image:src" content="http://texty.org.ua/d/amber/img/...."/>
     <meta name="twitter:image:width" content="1200"/>
     <meta name="twitter:image:height" content="630"/>
 
@@ -45,58 +46,66 @@
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anonymous+Pro"/>
+    <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="stylesheet" href="css/application.css" type="text/css" media="screen">
 
-
-    <!--Libraries-->
-    <script type="javascript" src="https://d3js.org/d3.v3.min.js"></script>
-    <script type="javascript" src='lib/share-behavior.js'></script>
 </head>
 <body>
 
-<div class="top logo-buttons">
-    <!--<p class="logo"><a href="http://texty.org.ua">TEXTY.ORG.UA</a></p>-->
-    <a href="http://texty.org.ua"><img class="logo" src="img/logo.png"></a>
+<div class="main-content">
+    <div class="roww he-1">
+        <!--TODO normal logo-->
+        <div class="top logo-buttons">
+            <a href="http://texty.org.ua"><img class="logo" src="img/logo.png"></a>
 
-    <div class="social-icons">
-        <a href="https://twitter.com/intent/tweet?text=http://texty.org.ua/amber-lune" class="share-btn"><i
-                class="fa fa-twitter fa-fw social-tw"></i></a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://texty.org.ua/amber-lune" class="share-btn"><i
-                class="fa fa-facebook-square social-fb"></i></a>
+            <div class="social-icons">
+                <a href="https://twitter.com/intent/tweet?text=http://texty.org.ua/d/2018/amber" class="share-btn"><i
+                        class="fa fa-twitter fa-fw social-tw"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://texty.org.ua/d/2018/amber" class="share-btn"><i
+                        class="fa fa-facebook-square social-fb"></i></a>
+            </div>
+        </div>
     </div>
-
-
 </div>
 <!--Desktop version-->
-<div class="main-content">
-    <div class="roww">
+<div class="main-content main-gridlines">
+    <div class="roww he-3">
+        <div class="block wi-2 he-2 le-7">
+            <div class="tetris-figure" id="figure1"></div>
+        </div>
 
-        <img class="img1" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-        <div class="height-2">
+        <div class="block wi-5 he-2 le-1 to-1">
             <h1>Земляна проказа</h1>
         </div>
     </div>
 
+    <div class="roww ma-to-1 he-2">
+        <div class="block wi-3 he-2">
+            <div class="tetris-figure" id="figure2"></div>
+        </div>
 
-    <div class="roww">
-        <div class="height-2">
-            <img class="block img2" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-
-            <h3 class="block">5.5 тисяч гектарів лісу перетворені на місячний ландшафт.
+        <div class="block le-4 wi-5 he-2">
+            <h3>5.5 тисяч гектарів лісу перетворені на місячний ландшафт.
                 За допомогою волонтерів і з використанням супутникових карт Тексти визначили масштаби видобутку
-                бурштину за останні роки.</h3>
+                бурштину за останні роки</h3>
         </div>
     </div>
 
+    <div class="roww ma-to-1 he-6">
+        <div class="block wi-2 he-3 le-7">
+            <div class="tetris-figure" id="figure3"></div>
+        </div>
 
-    <div class="roww" style="position:relative;">
-        <div class="incut">
+        <div class="block incut wi-2 he-3 le-6 to-2">
             <p>Українська частка світового ринку бурштину складає 30-40 відсотків,
                 у тоннах – від 250 до 350</p>
         </div>
 
-        <img class="block img3" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-        <div class="block paragraph paragraph1">
+        <div class="block wi-1 he-3 to-2">
+            <div class="tetris-figure" id="figure4"></div>
+        </div>
+
+        <div class="block paragraph wi-3 he-5 le-2 to-1">
             <p class="bottom-margin">Українські бурштинові клондайки забезпечують «робочими місцями» тисячі людей,
                 які проживають поблизу
                 від
@@ -115,56 +124,63 @@
                 супутникові
                 знімки реальних місць видобутку.</p>
         </div>
+    </div>
 
-        <img class="block img4" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
+    <div class="roww ma-to-2 he-3">
+        <div class="block wi-2 he-3 le-2">
+            <div class="tetris-figure" id="figure5"></div>
+        </div>
 
-
-    </div> <!-- end of roww-->
-
-
-    <div class="roww">
-        <img class="block img5" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-        <div class="block incut2">
+        <div class="block incut wi-4 he-1 le-5 to-1">
             <p>За приблизними підрахунками, усього до нелегального видобутку залучені близько 30 тисяч українців</p>
         </div>
-    </div><!-- end of roww-->
 
-    <div class="roww">
-        <img class="img6" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-    </div><!-- end of roww-->
+    </div>
 
-    <div class="roww">
-        <div class="block paragraph paragraph2">
+    <div class="roww he-1">
+        <div class="block wi-1 he-1 le-6">
+            <div class="tetris-figure" id="figure6"></div>
+        </div>
+    </div>
+
+    <div class="roww he-4 ma-to-1">
+        <div class="block paragraph wi-3 he-4 le-2">
             <p class="bottom-margin">Мов шахтарі-передовики, жителі бурштинових районів виходять на «робочі зміни».
                 За приблизними підрахунками, усього до нелегального видобутку залучені близько 30 тисяч українців
                 різного віку й роду занять: старшокласники, пенсіонери, трапляються навіть вчителі й священики. Вони
-                орудують на понад 5,500 гектарах землі. Річний дохід від нелегального видобутку, <a class="link"
-                                                                                                    href="http://www.nbuviap.gov.ua/index.php?option=com_content&view=article&id=2065:problema-vidobutku-burshtinu&catid=8&Itemid=350"
-                                                                                                    target="_blank">за
-                    оцінкою
-                    урядовців,</a> складає від 120 до 300 мільйонів доларів.</p>
+                орудують на понад 5,500 гектарах землі. Річний дохід від нелегального видобутку,
+                <a class="link" href="http://www.nbuviap.gov.ua/index.php?option=com_content&view=article&id=2065:problema-vidobutku-burshtinu&catid=8&Itemid=350" target="_blank">
+                    за оцінкою урядовців, </a> складає від 120 до 300 мільйонів доларів.
+            </p>
 
             <p>90 відсотків бурштину з поліських клондайків постачається на експорт до Китаю, решту ділять між собою
                 Об’єднані Арабські Емірати, Туреччина та країни Європи. Китай і визначає ціни на український
                 бурштин.</p>
         </div>
 
-        <div class="block incut3">
+        <div class="block incut wi-2 he-3 le-7 to-1">
             <p>Річний дохід від нелегального видобутку, за оцінкою урядовців, складає від 120 до 300 мільйонів
                 доларів</p>
         </div>
-    </div><!-- end of roww-->
+    </div>
 
-    <div class="roww">
-        <img class="img7" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-    </div><!-- end of roww-->
+    <div class="roww he-1 ma-to-1">
+        <div class="block wi-3 he-1 le-1">
+            <div class="tetris-figure" id="figure7"></div>
+        </div>
+    </div>
 
 
-    <div class="roww" style="position:relative;">
-        <img class="img9" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-        <img class="block img8" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
+    <div class="roww he-8">
+        <div class="block wi-2 he-3 le-7">
+            <div class="tetris-figure" id="figure8"></div>
+        </div>
 
-        <div class="block paragraph paragraph3">
+        <div class="block wi-2 he-2 to-2">
+            <div class="tetris-figure" id="figure9"></div>
+        </div>
+
+        <div class="block paragraph wi-3 he-7 le-2 to-1">
             <p class="bottom-margin">Та перед тим, як надійти кінцевому споживачеві, український камінь
                 легалізується в Польщі і продається через біржу у Гданську. Це означає, що левову частку прибутку
                 отримують поляки, які за ці кошти розвивають і переробку, і наукові дослідження, і легальну
@@ -187,39 +203,74 @@
                 але бурштинокопачі не поспішають відкидати помпи й лопати.</p>
         </div>
 
-        <img class="block img10" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-    </div><!-- end of roww-->
-
-
-    <div class="roww">
-        <img class="block img11" src="img/51.604684999999996_27.162096999999996_05_Oct_2015_GMT.jpg">
-        <div class="block incut4">
-            <p>Бурштин із поліських родовищ кращий за якістю, але росіяни видобувають більше і продають
-                дешевше. </p>
+        <div class="block wi-3 he-2 le-5 to-5">
+            <div class="tetris-figure" id="figure10"></div>
         </div>
-
     </div>
 
-
-    <div class="paragraph paragraph4">
-        <p>Для того, щоб оцінити масштаби понівечених видобутком територій, ми створили та застосували машинний
-            алгоритм[4], який після перевірки декількох сотень тисяч супутникових знімків вперше визначив головні
-            бурштинові копальні на території трьох Поліських областей. Нижче, ви можете побачити найбільш повну на
-            сьогодні інтерактивну карту незаконного видобутку бурштину в Україні.</p>
-
-
+    <div class="roww ma-to-1 he-2">
+        <div class="block wi-2 he-2 le-1">
+            <div class="tetris-figure" id="figure11"></div>
+        </div>
+        <div class="block incut wi-4 he-1 le-3">
+            <p>Бурштин із поліських родовищ кращий за якістю, але росіяни видобувають більше і продають
+                дешевше </p>
+        </div>
     </div>
 
+    <div class="roww ma-to-1 he-3">
+        <div class="block paragraph wi-3 he-3 le-2">
+            <p>Для того, щоб оцінити масштаби понівечених видобутком територій, ми створили та застосували машинний
+                алгоритм[4], який після перевірки декількох сотень тисяч супутникових знімків вперше визначив головні
+                бурштинові копальні на території трьох Поліських областей. Нижче, ви можете побачити найбільш повну на
+                сьогодні інтерактивну карту незаконного видобутку бурштину в Україні.</p>
 
-    <div class="incut5">
-        <p>Детально про життя на бурштинових клондайках читайте у нашому репортажі <a class="link"
-                                                                                      href="http://texty.org.ua/d/amber/"
-                                                                                      target="_blank">http://texty.org.ua/d/amber/</a>
-        </p>
+
+        </div>
+    </div>
+</div>
+
+<div id="finalmap"></div>
+
+<div class="main-content main-gridlines">
+    <div class="roww he-1">
+        <!--<div class="block incut wi-7 he-1 le-1" style="text-align: center">-->
+            <div class="block wi-7 he-1 le-1 read-more" style="text-align: center">
+            <p style="vertical-align: bottom">Детально про життя на бурштинових клондайках читайте у нашому репортажі <a class="link"
+                                                                                                                         href="http://texty.org.ua/d/amber/"
+                                                                                                                         target="_blank">http://texty.org.ua/d/amber/</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<div class="main-content">
+    <div class="roww he-2">
+        <div class="block credits wi-7 he-2 le-1">
+            <div class="block credits-job" style="text-align: right">
+                <p class="top-margin">Програмування та спецефекти</p>
+                <p>Дизайн і програмування</p>
+                <p>Моделювання</p>
+                <p>Розробка</p>
+                <p class="bottom-margin">Текст </p>
+            </div>
+            <div class="block credits-name">
+                <p class="top-margin">Влад ГЕРАСИМЕНКО</p>
+                <p>Надя КЕЛЬМ</p>
+                <p>Анатолій БОНДАРЕНКО</p>
+                <p>Євгенія ДРОЗДОВА</p>
+                <p class="bottom-margin">Ярослава ТИМОЩУК</p>
+                <p class="small-caps">texty.org.ua  iii · xxiv · mmxviii</p>
+            </div>
+        </div>
     </div>
 
+</div>
 
-</div> <!-- end of Desktop version-->
+
+
+<!-- end of Desktop version-->
 
 
 <!--Mobile version-->
@@ -325,37 +376,9 @@
                                                                                       target="_blank">http://texty.org.ua/d/amber/</a>
         </p>
     </div>
-
-
-
-
-
-
 </div> <!-- end of Mobile version-->
 
 
-<div class="bottom">
-
-    <div class="roww">
-        <div class="about block">
-            <p class="top-margin">Програмування і спецефекти</p>
-            <p>Дизайн і програмування</p>
-            <p>Моделювання</p>
-            <p>Розробка</p>
-            <p class="bottom-margin">Текст </p>
-        </div>
-        <div class="about_names block">
-            <p class="top-margin">Влад ГЕРАСИМЕНКО</p>
-            <p>Надя КЕЛЬМ</p>
-            <p>Анатолій БОНДАРЕНКО</p>
-            <p>Євгенія ДРОЗДОВА</p>
-            <p class="bottom-margin">Ярослава ТИМОЩУК</p>
-            <p class="small-caps">texty.org.ua  iii · xxiv · mmxviii</p>
-        </div>
-
-
-    </div>
-</div>
 
 
 <!--<p>Програмування і спецефекти: ВЛАД ГЕРАСИМЕНКО</p>-->
@@ -367,11 +390,12 @@
 <!-- Footer-->
 <!--<div id="footer">-->
     <!--<div id="footer-content">-->
-
+        <!--<div class="roww">-->
             <!--<div class="copyright">-->
                 <!--<p class="p1">&copy; 2018, Тексти.org.ua</p>-->
                 <!--<p class="p2">Медія для розумних</p>-->
             <!--</div>-->
+        <!--</div>-->
 
         <!--<div class="roww">-->
             <!--<div class="block">-->
@@ -425,27 +449,24 @@
                 <!--Велике прохання ставити гіперпосилання в першому чи другому абзаці вашого матеріалу.-->
             <!--</div>-->
         <!--</div>-->
-
-
     <!--</div>-->
 <!--</div>-->
 
-</body>
-<!-- Footer-->
-<!--<footer id="footer" class="container-fluid">-->
-<!--<div id="footer-wraper" class="wraper">-->
-<!--<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 col-md-3 col-sm-3 col-xs-12">-->
-<!--<div class="copyright">-->
+<script src="lib/leaflet.js"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
+<script src="lib/leaflet-bing-layer.min.js"></script>
+<!--<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>-->
+<script src="lib/jquery-2.1.4.min.js"></script>
+<script src="lib/d3.v4.min.js"></script>
 
-<!--</div>-->
-<!--</div>-->
+<script src="js/figure.js"></script>
+<script src="js/map.js"></script>
+<script src="js/finalmap.js"></script>
+<script src="js/main.js"></script>
+<script src="js/share-behavior.js"></script>
 
 
-<!--</div>-->
-<!--</footer>-->
-
-
-<script type="text/javascript">
+<script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-18136548-1']);
     _gaq.push(['_trackPageview']);
@@ -458,7 +479,6 @@
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
 
 </body>
 </html>
