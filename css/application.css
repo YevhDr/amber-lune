@@ -8,8 +8,8 @@ html {
 
 .logo {
   float: left;
-  margin-left: 20px;
-  padding-top: 20px;
+  width: 12%;
+  padding-top: 30px;
   text-transform: uppercase;
   font-weight: 900;
   z-index: 1000; }
@@ -30,17 +30,21 @@ html {
     vertical-align: middle; } }
 
 .fa-twitter,
-.fa-facebook {
-  background-color: rgba(187, 189, 192, 0.9);
-  margin-top: 20px;
+.fa-facebook-square {
+  margin-top: 30px;
   padding: 3px;
-  color: #706f6f;
   float: right;
   margin-right: 20px;
   cursor: pointer; }
   .fa-twitter:hover,
-  .fa-facebook:hover {
+  .fa-facebook-square:hover {
     color: #FAA61A; }
+
+.fa-twitter {
+  color: #ffffff; }
+
+.fa-facebook-square {
+  color: #ffffff; }
 
 a {
   color: white;
@@ -220,7 +224,8 @@ a:hover {
       fill: none;
       stroke: none; }
 
-html, body, div, h1, h2, h3, h4, h5, h6, p {
+html, body, div, h1, h2, h3, h4, h5, h6, p,
+.roww {
   margin: 0;
   padding: 0;
   border: 0; }
@@ -270,8 +275,9 @@ body {
 @media (min-width: 1280px) {
   .bottom {
     margin: 0 auto;
+    padding-bottom: 100px;
     width: 1280px;
-    height: 128px;
+    min-height: 128px;
     vertical-align: middle; } }
 @media (max-width: 1279px) {
   .bottom {
@@ -286,7 +292,8 @@ body {
   line-height: 0; }
 
 .block {
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 0; }
 
 @media (min-width: 1280px) {
   .img1 {
@@ -302,11 +309,10 @@ body {
 @media (min-width: 1280px) {
   .height-2 {
     height: calc(128px * 2);
-    margin-top: 0; } }
+    margin: 0 0 0 0; } }
 @media (max-width: 1279px) {
   .height-2 {
-    height: calc(calc(100vw / 11) * 2);
-    margin-top: -8px; } }
+    height: calc(calc(100vw / 11) * 2); } }
 
 h1 {
   font-weight: 800; }
@@ -314,8 +320,7 @@ h1 {
     h1 {
       font-size: 137px;
       line-height: 130px;
-      margin-left: 128px;
-      margin-top: -128px;
+      margin: -128px 0 0 128px;
       vertical-align: top; }
       h1 h1:first-line {
         line-height: 150px; } }
@@ -364,8 +369,9 @@ h3 {
       font-size: 28px;
       line-height: 44px;
       width: calc(128px * 4.8);
-      margin-top: 128px;
-      margin-left: 128px; } }
+      margin: 128px 0 0 128px;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0; } }
   @media (max-width: 1279px) {
     h3 {
       height: calc(calc(100vw / 11) * 3);
@@ -688,13 +694,13 @@ h3 {
   text-align: center; }
   @media (min-width: 1280px) {
     .incut5 {
-      margin-top: 128px;
+      margin-top: calc(128px * 2);
       margin-left: 128px;
       width: calc(128px * 7);
       height: 128px;
       vertical-align: top;
-      font-size: 34px;
-      line-height: 38px;
+      font-size: 20px;
+      line-height: 30px;
       font-weight: 900; } }
   @media (max-width: 1279px) {
     .incut5 {
@@ -703,13 +709,14 @@ h3 {
       width: calc(calc(100vw / 11) * 7);
       height: calc(100vw / 11);
       vertical-align: top;
-      font-size: 3vw;
-      line-height: 4vw;
+      font-size: 2vw;
+      line-height: 2vw;
       font-weight: 900; } }
 
 .about {
   font-weight: 800;
-  text-align: right; }
+  text-align: right;
+  vertical-align: top; }
   @media (min-width: 1280px) {
     .about {
       margin-left: calc(128px * 2.5);
@@ -720,8 +727,8 @@ h3 {
     .about {
       margin-left: calc(calc(100vw / 11) * 2);
       width: calc(calc(100vw / 11) * 3);
-      font-size: 2vw;
-      line-height: 3vw; } }
+      font-size: 1.5vw;
+      line-height: 2.5vw; } }
 
 .about_names {
   font-weight: 800;
@@ -729,15 +736,20 @@ h3 {
   @media (min-width: 1280px) {
     .about_names {
       margin-left: 30px;
-      width: calc(128px * 2);
+      width: calc(128px * 4);
       font-size: 16px;
       line-height: 22px; } }
   @media (max-width: 1279px) {
     .about_names {
       margin-left: 30px;
-      width: calc(calc(100vw / 11) * 2);
-      font-size: 2vw;
-      line-height: 3vw; } }
+      width: calc(calc(100vw / 11) * 4);
+      font-size: 1.5vw;
+      line-height: 2.5vw; } }
+
+.small-caps {
+  font-size: 18px;
+  line-height: 22px;
+  font-variant: small-caps; }
 
 /*------------------------------------------
 ------------ mobile version---------------*/
@@ -837,7 +849,7 @@ h3 {
   height: calc(calc(100vw / 11) * 2); }
 
 #footer {
-  margin: 50px 0 auto auto;
+  margin: 100px 0 auto auto;
   position: relative;
   bottom: 0;
   background-color: #080808;
@@ -855,18 +867,21 @@ h3 {
 @media (min-width: 1280px) {
   #footer-content {
     margin: 0 auto;
-    max-width: 1280px; } }
+    max-width: 100%; } }
 @media (max-width: 1279px) {
   #footer-content {
     max-width: 100%;
     margin-left: 50px;
     margin-right: 50px; } }
 
+ul {
+  margin-top: 20px; }
+
 .links li {
   color: #fff; }
   @media (min-width: 1280px) {
     .links li {
-      margin-left: 100px;
+      margin-left: 10%;
       font-size: 1vw;
       line-height: 2vw; } }
   @media (max-width: 1279px) {
@@ -874,6 +889,7 @@ h3 {
       display: none; } }
 
 .copyright {
+  vertical-align: top;
   float: left;
   margin-left: 50px;
   margin-top: 20px;

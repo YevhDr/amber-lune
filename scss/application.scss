@@ -8,7 +8,8 @@
 $cell: 128px;
 $narrow-cell: calc(100vw / 11);
 
-html, body, div, h1, h2, h3, h4, h5, h6, p {
+html, body, div, h1, h2, h3, h4, h5, h6, p,
+.roww{
   margin: 0;
   padding: 0;
   border: 0;
@@ -44,7 +45,6 @@ body {
     margin-left: $narrow-cell;
     margin-right: $narrow-cell;
     width: calc(100vw - (#{$narrow-cell}) * 2);
-
     background-size: $narrow-cell $narrow-cell;
     background-image: linear-gradient(to right, #7b7a7a 1px, transparent 1px),
     linear-gradient(to bottom, #7b7a7a 1px, #706f6f 1px);
@@ -81,8 +81,9 @@ body {
 .bottom {
   @media #{$brk-medium} {
     margin: 0 auto;
+    padding-bottom: 100px;
     width: 1280px;
-    height: $cell;
+    min-height: $cell;
     vertical-align: middle;
   }
   @media #{$brk-narrow}{
@@ -107,6 +108,7 @@ body {
 
 .block {
   display:inline-block;
+  margin-top: 0;
   //font-size: 0;
   //line-height: 0;
 
@@ -129,11 +131,11 @@ body {
 .height-2 {
   @media #{$brk-medium} {
     height: calc(#{$cell} * 2);
-    margin-top:0;
+    margin:0 0 0 0;
   }
   @media #{$brk-narrow} {
     height: calc(#{$narrow-cell} * 2);
-    margin-top:-8px;
+
   }
 }
 
@@ -144,8 +146,7 @@ h1 {
   @media  #{$brk-medium} {
     font-size:137px;
     line-height: 130px;
-    margin-left:$cell;
-    margin-top:-128px;
+    margin:-128px 0 0 $cell;
     vertical-align: top;
     h1:first-line {
       line-height: 150px;
@@ -208,8 +209,10 @@ h3 {
     font-size: 28px;
     line-height: 44px;
     width: calc(#{$cell} * 4.8);
-    margin-top: $cell;
-    margin-left: $cell;
+    margin: $cell 0 0 $cell;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+
   }
 
   @media #{$brk-narrow} {
@@ -622,13 +625,13 @@ h3 {
 .incut5 {
   text-align: center;
   @media #{$brk-medium} {
-    margin-top: $cell;
+    margin-top: calc(#{$cell} * 2);
     margin-left: $cell;
     width:calc(#{$cell} * 7);
     height: $cell;
     vertical-align: top;
-    font-size: 34px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 900;
   }
 
@@ -638,8 +641,8 @@ h3 {
     width:calc(#{$narrow-cell} * 7);
     height: $narrow-cell;
     vertical-align: top;
-    font-size: 3vw;
-    line-height: 4vw;
+    font-size: 2vw;
+    line-height: 2vw;
     font-weight: 900;
   }
 }
@@ -647,6 +650,8 @@ h3 {
 .about {
   font-weight: 800;
   text-align: right;
+  vertical-align: top;
+
 
   @media  #{$brk-medium} {
     margin-left: calc(#{$cell} * 2.5);
@@ -657,8 +662,8 @@ h3 {
   @media #{$brk-narrow}  {
     margin-left: calc(#{$narrow-cell} * 2);
     width:calc(#{$narrow-cell} * 3);
-    font-size: 2vw;
-    line-height: 3vw;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
   }
 }
 
@@ -667,17 +672,24 @@ h3 {
   text-align: left;
   @media #{$brk-medium} {
     margin-left: 30px;
-    width:calc(#{$cell} * 2);
+    width:calc(#{$cell} * 4);
     font-size: 16px;
     line-height: 22px;
   }
 
   @media #{$brk-narrow} {
     margin-left: 30px;
-    width:calc(#{$narrow-cell} * 2);
-    font-size: 2vw;
-    line-height: 3vw;
+    width:calc(#{$narrow-cell} * 4);
+    font-size: 1.5vw;
+    line-height: 2.5vw;
   }
+}
+
+.small-caps {
+  font-size: 18px;
+  line-height: 22px;
+  font-variant: small-caps;
+  //margin-bottom: 40px;
 }
 
 
@@ -821,7 +833,7 @@ h3 {
 
 //footer
 #footer {
-  margin:50px 0 auto auto;
+  margin:100px 0 auto auto;
   position: relative;
   bottom: 0;
   background-color: #080808;
@@ -842,7 +854,7 @@ h3 {
 #footer-content {
   @media #{$brk-medium} {
     margin:0 auto;
-    max-width: 1280px;
+    max-width: 100%;
   }
   @media #{$brk-narrow} {
     max-width: 100%;
@@ -851,10 +863,14 @@ h3 {
   }
 }
 
+ul {
+  margin-top: 20px;
+}
+
 .links li {
   color:$white;
   @media #{$brk-medium} {
-    margin-left: 100px;
+    margin-left: 10%;
     font-size:1vw;
     line-height: 2vw;
   }
@@ -864,6 +880,7 @@ h3 {
 }
 
 .copyright {
+  vertical-align: top;
   float: left;
   margin-left: 50px;
   margin-top: 20px;
